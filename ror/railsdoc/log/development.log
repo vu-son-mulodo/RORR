@@ -1,0 +1,167 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Thu Jun 13 13:51:04 +0700 2013
+Served asset /rails.png - 304 Not Modified (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Thu Jun 13 13:54:59 +0700 2013
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Thu Jun 13 14:36:04 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 02 17:48:49 +0700 2013
+Served asset /rails.png - 200 OK (18ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 02 18:25:00 +0700 2013
+Served asset /rails.png - 200 OK (2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 02 18:30:35 +0700 2013
+Served asset /rails.png - 200 OK (2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 02 18:34:21 +0700 2013
+Served asset /rails.png - 304 Not Modified (11ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 02 18:34:22 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 02 18:34:23 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 02 18:34:23 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 02 18:34:23 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 02 18:34:28 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 07:42:27 +0700 2013
+Served asset /rails.png - 200 OK (3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 08:20:30 +0700 2013
+Served asset /rails.png - 304 Not Modified (14ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 08:20:35 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 08:20:35 +0700 2013
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 08:20:35 +0700 2013
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 08:20:36 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 08:20:36 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 08:20:36 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 08:20:46 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Jul 03 17:54:41 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:47:17 +0700 2013
+Served asset /rails.png - 200 OK (3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:49:36 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:51:47 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:56:14 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:56:16 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:56:17 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:56:50 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:56:55 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:56:56 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:57:08 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Mon Jul 08 08:57:10 +0700 2013
+Served asset /rails.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Tue Jul 09 15:33:25 +0700 2013
+Served asset /rails.png - 304 Not Modified (2ms)
