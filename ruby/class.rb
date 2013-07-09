@@ -47,6 +47,10 @@ class Students < Student
     def self.getStudent(id)
 		return @@Studentlist[id]
 	end
+
+    def self.getStudentList
+		return @@Studentlist
+	end
 end
 
 
@@ -65,3 +69,10 @@ student_1.test
 
 student_2 = Students.getStudent(:"003")
 student_2.test
+
+StudentList = Students.getStudentList
+
+puts "\n\n ~~~~~~~~List student :~~~~~~~~~~~ \n"
+StudentList.each {|id,studentItem|
+	studentItem.test
+}
