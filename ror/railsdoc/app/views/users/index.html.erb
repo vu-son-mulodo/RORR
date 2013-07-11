@@ -1,0 +1,39 @@
+  <table id="rounded-corner" summary="Users Manager">
+    <thead>
+    	<tr>
+        	<th scope="col" class="rounded-company">No.</th>
+            <th scope="col" class="rounded-q1">Id</th>
+            <th scope="col" class="rounded-q2">Fullname</th>
+            <th scope="col" class="rounded-q3">Username</th>
+            <th scope="col" class="rounded-q4"></th>
+        </tr>
+    </thead>
+    <tbody>
+	  <%
+		i = 0
+		@users.each do |user|
+		i +=1
+	  %>
+    	<tr>
+			<td><%= i %></td>
+        	<td><%= user.id %></td>
+			<td><%= user.fullname %></td>
+            <td><%= user.username %></td>
+            <td>
+			  <a href="/users/edit/<%= user.id %>" class="linkaction">
+			  <%= link_to image_tag("select.png", :size => "15x15", :alt => "edit"), "/users/edit/#{user.id}"%>
+			  &nbsp;&nbsp;
+			  <%= link_to image_tag("remove.png", :size => "15x15", :alt => "delete"), "/users/del/#{user.id}", :data => {:confirm => 'Are you sure?'}%>
+			</td>
+        </tr>
+	  <% end %>
+    </tbody>
+	<tfoot>
+    	<tr>
+        	<td colspan="4" class="rounded-foot-left">
+			  <em><%= link_to image_tag("add.png", :size => "15x15", :alt => "add") << " Add User", "/users/new"%></em>
+			</td>
+        	<td class="rounded-foot-right">&nbsp;</td>
+        </tr>
+    </tfoot>
+</table>

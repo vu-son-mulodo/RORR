@@ -1,0 +1,27 @@
+<br />
+<%= form_for (:user, :url => "/login") do |f| %>
+
+  <p>
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </p>
+
+  <p>
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </p>
+
+  <br />
+
+  <% if @error != nil %>
+  <p>
+    <span id="errmsg"><%= @error %></span>
+  </p>
+  <% end %>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+

@@ -1,0 +1,37 @@
+<br />
+<%= form_for (:user, :url => "/users/new") do |f| %>
+
+<% if @error != nil %>
+<% @error.each do |label,val| %>
+  <p>
+    <span id="errmsg"><%= label %> : <%= val.inspect %></span>
+  </p>
+<% end %>
+<% end %>
+
+  <p>
+    <%= f.label :fullname %> *<br>
+    <%= f.text_field :fullname %>
+  </p>
+
+  <p>
+    <%= f.label :username %> *<br>
+    <%= f.text_field :username %>
+  </p>
+
+  <p>
+    <%= f.label :password %> *<br>
+    <%= f.password_field :password %>
+  </p>
+
+  <p>
+    <%= f.label :password_confirmation %> *<br>
+    <%= f.password_field :password_confirmation %>
+  </p>
+  <br />
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', "/users" %>

@@ -7,8 +7,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="page">
+        <div class="topNaviagationLink"><a href="/top/index">Home</a></div>
+		<div class="topNaviagationLink"><a href="/users">Users</a></div>
+		<div class="topNaviagationLink"><a href="/users/new">Create Users</a></div>
+		<% if (require_getinfo != false) %>
+		  <div class="topNaviagationLink_right">Wellcome <%= require_getinfo %> (<a href="/logout">Logout</a>)</div>
+		<% end %>
+	</div>
+	<div id="mainPicture">
+    	<div class="picture">
+        	<div id="headerTitle">Demo Use ROR to Manager Users</div>
+            <div id="headerSubtext">Create by Luong.Phuc@mulodo.com</div>
+        </div>
+    </div>
+	 <div class="contentBox">
+		<div class="innerBox">
+		  <div class="contentTitle">
+			<h1><%= @title %></h1>
+		  </div>
+		  <div class="contentText">
+		    <%= yield %>
+		  </div>
+	</div>
+  <div id="footer"><a href="http://www.aszx.net">web development</a> by <a href="#">Minh Phuc</a></div>
 </body>
 </html>

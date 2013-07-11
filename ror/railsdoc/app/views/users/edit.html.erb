@@ -1,0 +1,33 @@
+<br />
+<%= form_for (:user, :url => "/users/edit/#{@user.id}") do |f| %>
+
+<% if @error != nil %>
+<% @error.each do |label,val| %>
+  <p>
+    <span id="errmsg"><%= label %> : <%= val.inspect %></span>
+  </p>
+<% end %>
+<% end %>
+
+  <p>
+    <%= f.label :id %> : <%= @user.id %><br>
+  </p>
+
+  <p>
+    <%= f.label :fullname %><br>
+    <%= f.text_field :fullname %>
+  </p>
+
+  <p>
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </p>
+
+  <br />
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', "/users" %>
