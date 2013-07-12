@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   #protect_from_forgery
-
   helper_method :require_getinfo
 
   def require_getinfo
@@ -19,7 +18,7 @@ class ApplicationController < ActionController::Base
 
   def checkLogin
 	if session[:user_id] == nil
-	  redirect_to "/login"
+	  redirect_to("/login") and return false
 	end
   end
 end

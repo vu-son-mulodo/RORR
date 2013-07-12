@@ -37,7 +37,7 @@ class TBlowfish
 	  start +=8
 	end
 	if temp != 0
-	  for k in 0...temp
+	  for k in 0...(8-temp)
 		array[i-1] << ["00"].pack('H*')
 	  end
 	end
@@ -66,7 +66,7 @@ class TBlowfish
 	array = splitencrypt(data)
 	encryptedBlock = ''
 	for i in 0...array.length
-	  encryptedBlock << blowfish.encrypt_block(array[i])
+	  encryptedBlock << @blowfish.encrypt_block(array[i])
 	end
 	return encryptedBlock
   end
@@ -79,7 +79,7 @@ class TBlowfish
 	decryptedBlock = ''
 	for i in 0...array.length
 	  val = array[i]
-	  decryptedBlock << blowfish.decrypt_block([val].pack('H*'))
+	  decryptedBlock << @blowfish.decrypt_block([val].pack('H*'))
 	end
 	return decryptedBlock
   end
@@ -88,7 +88,7 @@ end
 
 =begin
   DEMO test blowfish encrypt
-#=end
+=end
 key = "hTUCiMzJaFVHH3wnHnZaAwArudSPFbnn6Mt6HQpxSQfYyPXyjPYM24Vy"
 plainBlock = 'api-forandroidpg-keymaster@@00R7H-w2iW6N2okUJnCPPJlwBSDDWGArVuDLbnLhmIDVkQ@@RESTMAIL_getinfo'
 #plainBlock = 'apiforandroidpgk'
@@ -111,4 +111,4 @@ data = blowfish.decrypt(data)
 print "descrypt : "
 print data
 puts ""
-=end
+#=end

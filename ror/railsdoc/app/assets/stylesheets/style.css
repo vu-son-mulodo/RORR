@@ -1,5 +1,5 @@
 /* ------------------
- styling for the tables 
+ styling for the tables
    ------------------   */
 
 
@@ -117,7 +117,7 @@ body
 #box-table-a td
 {
 	padding: 8px;
-	background: #e8edff; 
+	background: #e8edff;
 	border-bottom: 1px solid #fff;
 	color: #669;
 	border-top: 1px solid transparent;
@@ -153,7 +153,7 @@ body
 #box-table-b td
 {
 	padding: 8px;
-	background: #e8edff; 
+	background: #e8edff;
 	border-right: 1px solid #aabcfe;
 	border-left: 1px solid #aabcfe;
 	color: #669;
@@ -183,7 +183,7 @@ body
 }
 #hor-zebra .odd
 {
-	background: #e8edff; 
+	background: #e8edff;
 }
 
 
@@ -372,11 +372,11 @@ body
 }
 #rounded-corner thead th.rounded-company
 {
-	background: #b9c9fe url('table-images/left.png') left -1px no-repeat;
+	background: #b9c9fe url('left.png') left -1px no-repeat;
 }
 #rounded-corner thead th.rounded-q4
 {
-	background: #b9c9fe url('table-images/right.png') right -1px no-repeat;
+	background: #b9c9fe url('right.png') right -1px no-repeat;
 }
 #rounded-corner th
 {
@@ -395,11 +395,11 @@ body
 }
 #rounded-corner tfoot td.rounded-foot-left
 {
-	background: #e8edff url('table-images/botleft.png') left bottom no-repeat;
+	background: #e8edff url('botleft.png') left bottom no-repeat;
 }
 #rounded-corner tfoot td.rounded-foot-right
 {
-	background: #e8edff url('table-images/botright.png') right bottom no-repeat;
+	background: #e8edff url('botright.png') right bottom no-repeat;
 }
 #rounded-corner tbody tr:hover td
 {
@@ -415,7 +415,7 @@ body
 	width: 480px;
 	text-align: left;
 	border-collapse: collapse;
-	background: url('table-images/blurry.jpg') 330px 59px no-repeat;
+	background: url('blurry.jpg') 330px 59px no-repeat;
 }
 #background-image th
 {
@@ -436,20 +436,20 @@ body
 }
 #background-image tbody td
 {
-	background: url('table-images/back.png');
+	background: url('back.png');
 }
 * html #background-image tbody td
 {
-	/* 
+	/*
 	   ----------------------------
-		PUT THIS ON IE6 ONLY STYLE 
+		PUT THIS ON IE6 ONLY STYLE
 		AS THE RULE INVALIDATES
 		YOUR STYLESHEET
 	   ----------------------------
 	*/
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='table-images/back.png',sizingMethod='crop');
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='back.png',sizingMethod='crop');
 	background: none;
-}	
+}
 #background-image tbody tr:hover td
 {
 	color: #339;
@@ -471,18 +471,18 @@ body
 	font-size: 13px;
 	font-weight: normal;
 	padding: 8px;
-	background: #b9c9fe url('table-images/gradhead.png') repeat-x;
+	background: #b9c9fe url('gradhead.png') repeat-x;
 	border-top: 2px solid #d3ddff;
 	border-bottom: 1px solid #fff;
 	color: #039;
 }
 #gradient-style td
 {
-	padding: 8px; 
+	padding: 8px;
 	border-bottom: 1px solid #fff;
 	color: #669;
 	border-top: 1px solid #fff;
-	background: #e8edff url('table-images/gradback.png') repeat-x;
+	background: #e8edff url('gradback.png') repeat-x;
 }
 #gradient-style tfoot tr td
 {
@@ -492,7 +492,7 @@ body
 }
 #gradient-style tbody tr:hover td
 {
-	background: #d0dafd url('table-images/gradhover.png') repeat-x;
+	background: #d0dafd url('gradhover.png') repeat-x;
 	color: #339;
 }
 
@@ -505,11 +505,11 @@ body
 	width: 480px;
 	text-align: left;
 	border-collapse: collapse;
-	background: url('table-images/pattern.png');
+	background: url('pattern.png');
 }
 #pattern-style-a thead tr
 {
-	background: url('table-images/pattern-head.png');
+	background: url('pattern-head.png');
 }
 #pattern-style-a th
 {
@@ -521,7 +521,7 @@ body
 }
 #pattern-style-a td
 {
-	padding: 8px; 
+	padding: 8px;
 	border-bottom: 1px solid #fff;
 	color: #669;
 	border-top: 1px solid transparent;
@@ -541,11 +541,11 @@ body
 	width: 480px;
 	text-align: left;
 	border-collapse: collapse;
-	background: url('table-images/patternb.png');
+	background: url('patternb.png');
 }
 #pattern-style-b thead tr
 {
-	background: url('table-images/patternb-head.png');
+	background: url('patternb-head.png');
 }
 #pattern-style-b th
 {
@@ -557,7 +557,7 @@ body
 }
 #pattern-style-b td
 {
-	padding: 8px; 
+	padding: 8px;
 	border-bottom: 1px solid #fff;
 	color: #669;
 	border-top: 1px solid transparent;
