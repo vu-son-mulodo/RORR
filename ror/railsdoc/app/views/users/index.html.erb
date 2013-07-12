@@ -1,4 +1,4 @@
-  <table id="rounded-corner" summary="Users Manager">
+   <table id="rounded-corner" summary="Users Manager">
     <thead>
     	<tr>
         	<th scope="col" class="rounded-company">No.</th>
@@ -8,7 +8,7 @@
             <th scope="col" class="rounded-q4"></th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="loadsearch">
 	  <%
 		i = 0
 		@users.each do |user|
@@ -30,10 +30,13 @@
     </tbody>
 	<tfoot>
     	<tr>
-        	<td colspan="4" class="rounded-foot-left">
+        	<td colspan="2" class="rounded-foot-left">
 			  <em><%= link_to image_tag("add.png", :size => "15x15", :alt => "add") << " Add User", "/users/new"%></em>
 			</td>
-        	<td class="rounded-foot-right">&nbsp;</td>
+			<td>&nbsp;</td>
+			<td colspan="2" class="rounded-foot-right">
+			  <label>Username : </label><input id="searchbox" type="text" />
+			</td>
         </tr>
     </tfoot>
 </table>

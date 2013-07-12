@@ -1,11 +1,17 @@
 <br />
 <%= form_for (:user, :url => "/users/new") do |f| %>
 
-<% if @error != nil %>
-<% @error.each do |label,val| %>
+<% if @error != nil
+  lb = nil
+%>
+<% @error.each do |label,val|
+    if lb != label
+      lb = label
+%>
   <p>
     <span id="errmsg"><%= label %> : <%= val.inspect %></span>
   </p>
+<%  end %>
 <% end %>
 <% end %>
 
