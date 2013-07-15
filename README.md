@@ -14,5 +14,5 @@ Rspec :
   - Test -b
 
 Cucumber :
-  - Test
+  - Test -a
 
