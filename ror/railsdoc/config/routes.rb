@@ -50,7 +50,7 @@ Railsdoc::Application.routes.draw do
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
-  resources :users
+  #resources :users #For Rest API
   #   end
 
   # You can have the root of your site routed with "root"

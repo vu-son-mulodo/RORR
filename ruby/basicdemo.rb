@@ -14,7 +14,7 @@ if array.respond_to?("each")
 	# get value from array
 	array.each do |val|
 			puts " value #{i} : #{val}"
-		i = i + 1
+		i += 1
 	end
 end
 

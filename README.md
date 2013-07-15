@@ -2,14 +2,14 @@ RORR
 ====
 
 Research about Ruby, ROR, Rspec, Cucumber.
-Ruby : 
+Ruby :
  - basicdemo.rb : training about Array, String, Hash, Sort, If, Loop, Block, Proc, Lambda
  - class.rb : training about use Object, class, def
  - lblowfish.rb : demo create class blowfish
 
-ROR : 
+ROR :
  - training use ROR (demo about manages insert, update, delete, select, session, cookie)
 
 Rspec :
-
-Cucumber : 
+ - Test
+Cucumber :

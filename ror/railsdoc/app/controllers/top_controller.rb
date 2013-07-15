@@ -1,5 +1,4 @@
 class TopController < ApplicationController
-  include UsersHelper
   def index
 	@title = "Manager Users"
   end
