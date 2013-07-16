@@ -10,6 +10,15 @@ class TBlowfish
 	  @@blfish = TBlowfish.new
 	end
 	data = @@blfish.encrypt(data)
+	return data
+  end
+
+  def self.decrypt(data)
+	if @@blfish == nil
+	  @@blfish = TBlowfish.new
+	end
+	data = @@blfish.decrypt(data)
+	return data
   end
 
   def initialize(key = nil)
@@ -55,9 +64,9 @@ class TBlowfish
   end
 
 =begin
-	splitdencrypt convert data to hex array what there are every part as 16 byte
+	splitdecrypt convert data to hex array what there are every part as 16 byte
 =end
-  def splitdencrypt(data)
+  def splitdecrypt(data)
 	data = data.unpack("H*")
 	lengthkey =  data[0].length / 16
 	array = Hash.new
@@ -85,13 +94,14 @@ class TBlowfish
   decrypt data
 =end
   def decrypt(data)
-	array = splitdencrypt(data)
+	data = Base64.decode64(data)
+	array = splitdecrypt(data)
 	decryptedBlock = ''
 	for i in 0...array.length
 	  val = array[i]
 	  decryptedBlock << blowfish.decrypt_block([val].pack('H*'))
 	end
-	return blowfish.decrypt(decryptedBlock)
+	return decryptedBlock.tr(["00"].pack('H*'), "")
   end
 end
 

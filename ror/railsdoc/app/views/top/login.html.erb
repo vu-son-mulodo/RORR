@@ -18,8 +18,18 @@
   <p>
     <span id="errmsg"><%= @error %></span>
   </p>
-  <% end %>
+<% end %>
 
+  <p>
+	<% remember = ""
+		if defined? @remember[:remember]
+		  if @remember[:remember] == "1"
+			remember = "checked"
+		  end
+		end
+	  %>
+	<%= check_box(:checkbox,:remember, {:checked => remember}) %> Remember login
+  </p>
   <p>
     <%= f.submit %>
   </p>
