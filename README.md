@@ -14,5 +14,5 @@ Rspec :
   - Test
 
 Cucumber :
-  - Test abc
+  - Test
 
