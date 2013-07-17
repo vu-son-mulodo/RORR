@@ -1,0 +1,8 @@
+<div id="page">
+  <div class="topNaviagationLink"><%= link_to 'Home', "/top/index" %></div>
+  <div class="topNaviagationLink"><%= link_to 'Users', "/users" %></div>
+  <div class="topNaviagationLink"><%= link_to 'Create Users', "/users/new" %></div>
+  <% if (require_getinfo != false) %>
+	<div class="topNaviagationLink_right">Wellcome <%= require_getinfo %> (<%= link_to 'Logout', "/logout" %>)</div>
+  <% end %>
+</div>
