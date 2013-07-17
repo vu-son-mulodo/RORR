@@ -28,7 +28,7 @@ class Users < ActiveRecord::Base
 	username.downcase!
 	password = TBlowfish.encrypt(password)
 	check = Users.find_by_username_and_password(username,password)
-	if check != nil
+	unless check.nil?
 	  return check
 	else
 	  return false

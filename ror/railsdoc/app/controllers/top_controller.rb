@@ -10,21 +10,29 @@ class TopController < ApplicationController
 	@store = @user
 	@remember = params[:checkbox]
 	@error = nil
-	if (@user != nil) && (@user[:username] != "") && (@user[:password] != "")
+
+	if (@user != nil) && (@user[:username] != nil) && (@user[:password] != nil)
+
 	  if actionLogin(@user[:username],@user[:password]) == true
+
 		#store cookie
 		if (defined? @remember[:remember]) && (@remember[:remember] == "1")
 		  rememberLogin(@store[:username],@store[:password])
 		end
+
 	  end
+
 	else
 	  @cookie = getAccountfromCookie()
+
 	  if @cookie != false
 		actionLogin(@cookie[0],@cookie[1])
 	  else
 		@user = Users.new
 	  end
+
 	end
+
   end
 
   def logout
