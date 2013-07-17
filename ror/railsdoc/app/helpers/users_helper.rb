@@ -5,10 +5,16 @@ module UsersHelper
 	@user = Users.checkLogin(username,password)
 	if @user != false
 	  session[:user_id] = @user.id
-	  redirect_to "/users"
+	  if (flash[:uri] == nil)
+		redirect_to "/users"
+	  else
+		redirect_to flash[:uri]
+	  end
+	  return true;
 	else
 	  @user = Users.new(:username => username)
 	  @error = "Username or Password wrong"
+	  return false;
 	end
  end
 
@@ -18,8 +24,15 @@ module UsersHelper
  end
 
   def checkLogin
+	flash[:uri] = request.original_url
 	if session[:user_id] == nil
 	  redirect_to("/login") and return false
+	else
+	  begin
+		userinfo = Users.find(session[:user_id])
+	  rescue ActiveRecord::RecordNotFound => e
+		redirect_to("/login") and return false
+	  end
 	end
   end
 
@@ -33,6 +46,20 @@ module UsersHelper
 	  if userinfo != nil
 		return userinfo.fullname
 	  end
+	end
+	return false
+  end
+
+  def rememberLogin(username,password)
+	data = TBlowfish.encrypt("#{username} #{password}")
+	cookies[:mem] = { :value => data, :expires => Time.now + 3600}
+	return data
+  end
+
+  def getAccountfromCookie()
+	if cookies[:mem] != nil
+	  account = TBlowfish.decrypt(cookies[:mem]).split(/ /)
+	  return account
 	end
 	return false
   end
