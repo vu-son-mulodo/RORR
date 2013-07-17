@@ -9,24 +9,7 @@
         </tr>
     </thead>
     <tbody id="loadsearch">
-	  <%
-		i = 0
-		@users.each do |user|
-		i +=1
-	  %>
-    	<tr>
-			<td><%= i %></td>
-        	<td><%= user.id %></td>
-			<td><%= user.fullname %></td>
-            <td><%= user.username %></td>
-            <td>
-			  <a href="/users/edit/<%= user.id %>" class="linkaction">
-			  <%= link_to image_tag("select.png", :size => "15x15", :alt => "edit"), "/users/edit/#{user.id}"%>
-			  &nbsp;&nbsp;
-			  <%= link_to image_tag("remove.png", :size => "15x15", :alt => "delete"), "/users/del/#{user.id}", :data => {:confirm => 'Are you sure?'}%>
-			</td>
-        </tr>
-	  <% end %>
+	  <%= render :partial => "userList", :collection => @users %>
     </tbody>
 	<tfoot>
     	<tr>

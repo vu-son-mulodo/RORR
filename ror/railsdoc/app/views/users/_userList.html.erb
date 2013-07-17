@@ -1,0 +1,12 @@
+<tr>
+  <td><%= userList_counter %></td>
+  <td><%= userList.id %></td>
+  <td><%= userList.fullname %></td>
+  <td><%= userList.username %></td>
+  <td>
+	<a href="/users/edit/<%= userList.id %>" class="linkaction">
+	<%= link_to image_tag("select.png", :size => "15x15", :alt => "edit"), "/users/edit/#{userList.id}"%>
+	&nbsp;&nbsp;
+	<%= link_to image_tag("remove.png", :size => "15x15", :alt => "delete"), "/users/del/#{userList.id}", :data => {:confirm => 'Are you sure?'}%>
+  </td>
+</tr>

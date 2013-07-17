@@ -1,5 +1,5 @@
 <br />
-<%= form_for (:user, :url => "/users/edit/#{@user.id}") do |f| %>
+<%= form_for :user, :url => "/users/edit/#{@user.id}" do |f| %>
 
 <% if @error != nil %>
 <% @error.each do |label,val| %>

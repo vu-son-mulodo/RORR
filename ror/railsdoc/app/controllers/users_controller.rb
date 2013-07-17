@@ -73,7 +73,7 @@ class UsersController < ApplicationController
 		@users = Users.all
 	  end
 
-	  render "search" => @users, :layout => nil
+	  render :partial => "userList", :collection => @users
 	end
 
   end

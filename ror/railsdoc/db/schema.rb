@@ -12,4 +12,10 @@
 
 ActiveRecord::Schema.define(:version => 20130710080708) do
 
+  create_table "users", :force => true do |t|
+    t.string "fullname", :limit => 100
+    t.string "username", :limit => 100
+    t.string "password", :limit => 100
+  end
+
 end

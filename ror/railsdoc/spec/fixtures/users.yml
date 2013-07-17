@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  fullname: Lương Ngọc Minh Phúc
+  username: luong.phuc
+  password: 1234567890
+
+two:
+  id: 2
+  fullname: Nguyễn Minh Hoàng
+  username: nguyen.hoang
+  password: abcdefgh
