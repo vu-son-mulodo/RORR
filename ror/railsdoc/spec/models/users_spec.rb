@@ -1,0 +1,79 @@
+require "spec_helper"
+
+describe Users do
+  fixtures :users
+
+  context :create do
+
+	it ".validation_create_nil" do
+	  expect(Users.create).to have(2).error_on(:fullname, :context => :create)
+	  expect(Users.create).to have(2).error_on(:username, :context => :create)
+	  expect(Users.create).to have(2).error_on(:password, :context => :create)
+	  expect(Users.create).to have(2).error_on(:password_confirmation, :context => :create)
+	end
+
+	it ".validate_minimum" do
+	  expect(Users.create(:fullname => "abc")).to have(1).error_on(:fullname, :context => :create)
+	  expect(Users.create(:username => "abc")).to have(1).error_on(:username, :context => :create)
+	  expect(Users.create(:password => "abc")).to have(1).error_on(:password, :context => :create)
+	  expect(Users.create(:password_confirmation => "abc")).to have(1).error_on(:password_confirmation, :context => :create)
+	end
+
+	it ".validate_password" do
+	  expect(Users.create(:password => "123456",:password_confirmation => "321321")).to have(1).error_on(:password, :context => :create)
+	  expect(Users.create(:password => "123",:password_confirmation => "321321")).to have(2).error_on(:password, :context => :create)
+	  expect(Users.create(:password => "112323",:password_confirmation => "3213")).to have(1).error_on(:password, :context => :create)
+	  expect(Users.create(:password => "112",:password_confirmation => "321")).to have(2).error_on(:password, :context => :create)
+	  expect(Users.create(:password => "123456",:password_confirmation => "123456")).to have(0).error_on(:password, :context => :create)
+	end
+
+	it ".validate_username_and_password_no_space" do
+	  expect(Users.create(:username => "1234 56")).to have(1).error_on(:username, :context => :create)
+	  expect(Users.create(:password => "123 456")).to have(1).error_on(:password, :context => :create)
+	  expect(Users.create(:password_confirmation => "321 321")).to have(1).error_on(:password_confirmation, :context => :create)
+	end
+
+	it ".validate_record_create" do
+	  expect(Users).to have(1).records
+	  Users.create!(:fullname => "Lương Ngọc Minh Phúc", :username => "minhphuc86", :password => "123123123", :password_confirmation => "123123123")
+	  expect(Users).to have(2).record
+	  expect(Users.where(:fullname => "Lương Ngọc Minh Phúc")).to have(1).record
+	  expect(Users.where(:username => "minhphuc86")).to have(1).record
+	end
+
+  end
+
+  context :update do
+
+	it ".validation_nil" do
+	  expect(Users.update(1,:fullname => "")).to have(2).error_on(:fullname, :context => :update)
+	  expect(Users.update(1,:username => "")).to have(2).error_on(:username, :context => :update)
+	  expect(Users.update(1,:password => "")).to have(0).error_on(:password, :context => :update)
+	  expect(Users.update(1,:password_confirmation => "")).to have(0).error_on(:password_confirmation, :context => :update)
+	end
+
+	it ".validate_minimum" do
+	  expect(Users.update(1,:fullname => "abc")).to have(1).error_on(:fullname, :context => :update)
+	  expect(Users.update(1,:username => "abc")).to have(1).error_on(:username, :context => :update)
+	  expect(Users.update(1,:password => "abc")).to have(0).error_on(:password, :context => :update)
+	  expect(Users.update(1,:password_confirmation => "abc")).to have(0).error_on(:password_confirmation, :context => :update)
+	end
+
+	it ".validate_password" do
+	  expect(Users.update(1,{:password => "123456",:password_confirmation => "321321"})).to have(0).error_on(:password, :context => :update)
+	  expect(Users.update(1,{:password => "123",:password_confirmation => "321321"})).to have(0).error_on(:password, :context => :update)
+	  expect(Users.update(1,{:password => "112323",:password_confirmation => "3213"})).to have(0).error_on(:password, :context => :update)
+	  expect(Users.update(1,{:password => "112",:password_confirmation => "321"})).to have(0).error_on(:password, :context => :update)
+	  expect(Users.update(1,{:password => "123456",:password_confirmation => "123456"})).to have(0).error_on(:password, :context => :update)
+	end
+
+	it ".validate_record_update" do
+	  expect(Users.where(:fullname => "Nguyễn Minh Hoàng",:username => "nguyen.hoang")).to have(1).record
+	  Users.update(1,:fullname => "Lương Ngọc Minh Phúc")
+	  expect(Users.where(:fullname => "Nguyễn Minh Hoàng",:username => "nguyen.hoang")).to have(0).record
+	  expect(Users.where(:fullname => "Lương Ngọc Minh Phúc",:username => "nguyen.hoang")).to have(1).record
+	end
+
+  end
+
+end
