@@ -3,7 +3,7 @@ module UsersHelper
 
  def actionLogin(username,password)
 	@user = Users.checkLogin(username,password)
-	if @user != false
+	unless @user.nil?
 	  session[:user_id] = @user.id
 
 	  if flash[:uri].nil?
