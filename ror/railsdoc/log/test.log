@@ -27633,3 +27633,499 @@ Unable to load user, underlying cause No such file to load -- user
   [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
   [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'nguyen.hoang' AND "users"."id" != 1) LIMIT 1[0m
   [1m[35m (1.4ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 07:56:44 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 07:56:44 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 07:57:17 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 07:57:17 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("updated_at", "created_at", "update", "content", "title", "id") VALUES ('2013-07-22 07:58:35', '2013-07-22 07:58:35', 1374481765, 'abc', 'abc', 1)[0m
+SQLite3::SQLException: table blogs has no column named update: INSERT INTO "blogs" ("updated_at", "created_at", "update", "content", "title", "id") VALUES ('2013-07-22 07:58:35', '2013-07-22 07:58:35', 1374481765, 'abc', 'abc', 1)
+  [1m[35m (2.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("update", "id", "created_at", "content", "updated_at", "title") VALUES (1374481765, 1, '2013-07-22 08:00:32', 'abc', '2013-07-22 08:00:32', 'abc')[0m
+SQLite3::SQLException: table blogs has no column named update: INSERT INTO "blogs" ("update", "id", "created_at", "content", "updated_at", "title") VALUES (1374481765, 1, '2013-07-22 08:00:32', 'abc', '2013-07-22 08:00:32', 'abc')
+  [1m[35m (1.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "id", "updated_at", "content") VALUES ('2013-07-22 08:12:45', 'abc', 1, '2013-07-22 08:12:45', 'abc')[0m
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:12:45 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:12:45 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:12:45 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:12:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:12:45 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:12:45 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("title", "created_at", "updated_at", "content", "id") VALUES ('abc', '2013-07-22 08:23:35', '2013-07-22 08:23:35', 'abc', 1)[0m
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:23:35 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:23:35 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:23:35 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:23:35 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:23:35 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:23:35 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("title", "updated_at", "content", "id", "created_at") VALUES ('abc', '2013-07-22 08:28:42', 'abc', 1, '2013-07-22 08:28:42')[0m
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBlog Load (0.1ms)[0m  SELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:28:42 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:28:42 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:28:42 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:28:42 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:28:42 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:28:42 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "updated_at", "created_at", "id", "title") VALUES ('abc', '2013-07-22 08:29:12', '2013-07-22 08:29:12', 1, 'abc')[0m
+  [1m[35m (4.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:29:12 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:29:12 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:29:12 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:29:12 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:29:12 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:29:12 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "blogs" ("updated_at", "created_at", "content", "id", "title") VALUES ('2013-07-22 08:29:47', '2013-07-22 08:29:47', 'abc', 1, 'abc')[0m
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:29:47 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:29:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:29:47 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:29:47 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:29:47 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:29:47 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "id", "updated_at") VALUES ('abc', '2013-07-22 08:30:11', 'abc', 1, '2013-07-22 08:30:11')[0m
+  [1m[35m (55.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:30:11 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:30:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:30:11 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:30:11 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:30:11 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:30:11 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "updated_at", "content", "title", "id") VALUES ('2013-07-22 08:40:54', '2013-07-22 08:40:54', 'abc', 'abc', 1)[0m
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:40:54 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:40:54 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:40:54 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:40:54 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:40:54 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:40:54 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("updated_at", "id", "created_at", "content", "title") VALUES ('2013-07-22 08:41:33', 1, '2013-07-22 08:41:33', 'abc', 'abc')[0m
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:41:33 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:41:33 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:41:33 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:41:33 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:41:33 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:41:33 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "id", "updated_at", "title", "content") VALUES ('2013-07-22 08:41:37', 1, '2013-07-22 08:41:37', 'abc', 'abc')[0m
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:41:38 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:41:38 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:41:38 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:41:38 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:41:38 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:41:38 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "blogs" ("title", "updated_at", "content", "id", "created_at") VALUES ('abc', '2013-07-22 08:41:46', 'abc', 1, '2013-07-22 08:41:46')[0m
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:41:46 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:41:46 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:41:46 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:41:46 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:41:46 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:41:46 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "id", "updated_at", "content", "title") VALUES ('2013-07-22 08:42:49', 1, '2013-07-22 08:42:49', 'abc', 'abc')[0m
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:42:49 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:42:49 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:42:49 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:42:49 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:42:49 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:42:49 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("title", "id", "content", "updated_at", "created_at") VALUES ('abc', 1, 'abc', '2013-07-22 08:42:55', '2013-07-22 08:42:55')[0m
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:42:55 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:42:55 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:42:55 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:42:55 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:42:55 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:42:55 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("updated_at", "created_at", "title", "content", "id") VALUES ('2013-07-22 08:43:30', '2013-07-22 08:43:30', 'abc', 'abc', 1)[0m
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:43:30 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:43:30 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:43:30 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:43:30 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:43:31 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:43:31 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "title", "updated_at", "content", "id") VALUES ('2013-07-22 08:44:00', 'abc', '2013-07-22 08:44:00', 'abc', 1)[0m
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:44:00 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:44:00 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:44:00 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:44:00 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:44:00 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:44:00 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("updated_at", "created_at", "title", "content", "id") VALUES ('2013-07-22 08:44:17', '2013-07-22 08:44:17', 'abc', 'abc', 1)[0m
+  [1m[35m (87.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:44:17 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:44:17 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:44:17 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:44:17 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:44:17 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:44:17 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (2.7ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "content", "id", "updated_at", "title") VALUES ('2013-07-22 08:44:21', 'abc', 1, '2013-07-22 08:44:21', 'abc')[0m
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:44:21 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:44:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:44:21 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:44:21 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:44:21 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:44:21 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("updated_at", "content", "created_at", "title", "id") VALUES ('2013-07-22 08:45:05', 'abc', '2013-07-22 08:45:05', 'abc', 1)[0m
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:45:05 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:45:05 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:45:05 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:45:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:45:05 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:45:05 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("title", "created_at", "content", "id", "updated_at") VALUES ('abc', '2013-07-22 08:48:02', 'abc', 1, '2013-07-22 08:48:02')[0m
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:48:02 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:48:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:48:02 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:48:02 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:48:02 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:48:02 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "updated_at", "id", "created_at", "title") VALUES ('abc', '2013-07-22 08:50:16', 1, '2013-07-22 08:50:16', 'abc')[0m
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:50:16 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:50:16 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:50:16 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:50:16 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:50:16 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:50:16 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "content", "title", "updated_at", "created_at") VALUES (1, 'abc', 'abc', '2013-07-22 08:50:40', '2013-07-22 08:50:40')[0m
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:50:40 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:50:40 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:50:40 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:50:40 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:50:40 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:50:40 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "updated_at", "created_at", "title", "id") VALUES ('abc', '2013-07-22 08:51:50', '2013-07-22 08:51:50', 'abc', 1)[0m
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:51:50 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:51:50 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:51:50 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:51:50 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:51:50 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:51:50 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "updated_at", "created_at", "content", "title") VALUES (1, '2013-07-22 08:52:19', '2013-07-22 08:52:19', 'abc', 'abc')[0m
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:52:19 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:52:19 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:52:19 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:52:19 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:52:19 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:52:19 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("created_at", "content", "title", "id", "updated_at") VALUES ('2013-07-22 08:53:32', 'abc', 'abc', 1, '2013-07-22 08:53:32')[0m
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:53:32 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:53:32 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:53:32 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:53:32 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:53:32 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:53:32 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "id", "title", "created_at", "updated_at") VALUES ('abc', 1, 'abc', '2013-07-22 08:54:22', '2013-07-22 08:54:22')[0m
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:54:22 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:54:22 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:54:22 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:54:22 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "blogs" ("content", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", nil], ["created_at", Mon, 22 Jul 2013 08:54:22 UTC +00:00], ["title", nil], ["updated_at", Mon, 22 Jul 2013 08:54:22 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction

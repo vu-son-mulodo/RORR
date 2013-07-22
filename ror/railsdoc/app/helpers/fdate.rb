@@ -1,5 +1,11 @@
 class Fdate
   @@format = '%d-%m-%Y'
+  @@formatTime = '%d-%m-%Y %H:%M:%S'
+  @@timezone = "Hanoi"
+
+  def self.string2Datez(date)
+	return date.in_time_zone(@@timezone).strftime(@@formatTime)
+  end
 
   def self.today
 	return Date.current.to_time.to_i
