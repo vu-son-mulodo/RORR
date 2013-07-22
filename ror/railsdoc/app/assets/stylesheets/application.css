@@ -52,17 +52,14 @@ font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
 
 .topNaviagationLink_right
 {
+  position: relative;
   text-align:right;
-  position:relative;
-  margin-top:30px;
-  font-size:12px;
-  margin-left:-10px;
-  width:300px;
-  height: 35px;
-  line-height: 35px;
+  font-size:15px;
   float:right;
-  color:#CEEAEE;
+  color:#FFFFFF;
   font-family:"Adobe Garamond Pro Bold", Georgia, "Times New Roman", Times, serif;
+  top:250px;
+  margin-right: 20px;
 }
 .topNaviagationLink_right a
 {
