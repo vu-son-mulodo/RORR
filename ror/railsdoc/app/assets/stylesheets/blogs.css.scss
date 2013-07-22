@@ -1,0 +1,28 @@
+// Place all the styles related to the Blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#body .contentBox .contentText .section {
+	float: left;
+	margin: 0;
+	padding: 0 32px;
+	width: 366px;
+}
+#body .contentBox .contentText .section li {
+	padding-bottom: 30px;
+}
+#body .contentBox .contentText .section li small {
+	color: #265264;
+	display: block;
+	float: left;
+	font-size: 14px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	width: 60px;
+}
+#body .contentBox .contentText .section li p {
+	float: left;
+	line-height: 30px;
+	padding: 0 0 0 6px;
+	width: 300px;
+}
