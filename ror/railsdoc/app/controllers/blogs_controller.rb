@@ -7,6 +7,7 @@ class BlogsController < ApplicationController
   end
 
   def new
+    @title = "Create Blog"
     if checkLogin
 
       @blog = params[:blog]

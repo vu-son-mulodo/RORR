@@ -1,43 +1,20 @@
 <div class="section">
   <h2>Blogs</h2>
-  <ul>
-      <li>
-          <small><%
-            current = Fdate.today #unix time
-          %>04.26.12   <%=Fdate.date2String(current) %></small>
-          <p>
-              You can remove any link to our website from this website template, you're free to use this website template without linking back to us. <a href="blog.html" class="more">(more)</a>
-          </p>
-      </li>
-      <li>
-          <small>14.27.12</small>
-          <p>
-              You can remove any link to our website from this website template, you're free to use this website template without linking back to us. <a href="blog.html" class="more">(more)</a>
-          </p>
-      </li>
-      <li>
-          <small>05.11.12</small>
-          <p>
-              This is just a place holder, so you can see what the site would look like.This is just a place holder. <a href="blog.html" class="more">(more)</a>
-          </p>
-      </li>
-      <li>
-          <small>05.15.12</small>
-          <p>
-              This is just a place holder, so you can see what the site would look like. <a href="blog.html" class="more">(more)</a>
-          </p>
-      </li>
-  </ul>
 
   <ul>
     <% @blogsList.each do |blog| %>
       <li>
-        <small><%=Fdate.date2String(blog.created_at) %></small>
-        <small><%= link_to 'Edit', "/blogs/edit/#{blog.id}" %></small>
+        <small><%=blog.title %></small>
+
         <p>
-            <%= blog.content %>. <%= link_to 'more', "/blogs/detail/#{blog.id}" %>
-      </p>
-    </li>
-  <% end %>
-</ul>
+            <%= blog.content %>. <%= link_to '(more)', "/blogs/detail/#{blog.id}" %>
+        </p>
+        <small>created: <%=Fdate.string2Datez(blog.created_at) %></small>
+        <small>and modified: <%=Fdate.string2Datez(blog.updated_at) %></small>
+        <small><%= link_to 'Edit', "/blogs/edit/#{blog.id}" %></small>
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to 'Back', "/top" %>
+  <%= link_to 'New Blog', "/blogs/new" %>
 </div>
