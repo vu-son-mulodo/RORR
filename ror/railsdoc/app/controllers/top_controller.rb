@@ -27,8 +27,6 @@ class TopController < ApplicationController
 
 	  if @cookie != false
 		actionLogin(@cookie[0],@cookie[1])
-	  else
-		@user = Users.new
 	  end
 
 	end

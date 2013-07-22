@@ -1,5 +1,5 @@
 module UsersHelper
- include ApplicationHelper
+  require 'tBlowfish'
 
  def actionLogin(username,password)
 	@user = Users.checkLogin(username,password)

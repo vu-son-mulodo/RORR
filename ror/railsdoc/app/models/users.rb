@@ -1,5 +1,4 @@
 class Users < ActiveRecord::Base
-  include ApplicationHelper
 
   attr_accessible :fullname, :username, :password, :password_confirmation
   validates :fullname, :username, :presence => true, :length => { :minimum => 6, :maximum => 100}

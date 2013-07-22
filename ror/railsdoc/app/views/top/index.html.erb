@@ -5,3 +5,19 @@
   <p>User/edit : Update User</p>
   <p>User/delete : Delete User</p>
 
+  <br /><br />
+
+  <%
+	current = Fdate.today #unix time
+	date = Fdate.string2Date("2-5-2013")
+  %>
+
+  Date Unix: <%=date %>
+  <br />
+  Date : <%=Fdate.date2String(date) %>
+  <br />
+  Current Unix : <%=current %>
+  <br />
+  Current : <%=Fdate.date2String(current) %>
+  <br />
+  Add 3 days for Current day : <%=Fdate.add(current,3) %>
