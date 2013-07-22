@@ -13,12 +13,14 @@ class TopController < ApplicationController
 
 	if (@user != nil) && (@user[:username] != nil) && (@user[:password] != nil)
 
-	  if actionLogin(@user[:username],@user[:password]) == true
+	  unless actionLogin(@user[:username],@user[:password]).nil?
 
 		#store cookie
 		if (defined? @remember[:remember]) && (@remember[:remember] == "1")
 		  rememberLogin(@store[:username],@store[:password])
 		end
+
+		redirect_to @uri
 
 	  end
 
@@ -35,5 +37,6 @@ class TopController < ApplicationController
 
   def logout
 	actionLogout
+	redirect_to @uri
   end
 end

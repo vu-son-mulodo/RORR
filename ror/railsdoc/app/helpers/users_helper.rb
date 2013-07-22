@@ -7,41 +7,44 @@ module UsersHelper
 	  session[:user_id] = @user.id
 
 	  if flash[:uri].nil?
-		redirect_to "/users"
+		@uri = "/users"
 	  else
-		redirect_to flash[:uri]
+		@uri = flash[:uri]
 	  end
-
 	  return true;
 	else
 	  @user = Users.new(:username => username)
 	  @error = "Username or Password wrong"
-	  return false;
+	  return nil;
 	end
 
  end
 
  def actionLogout
   session[:user_id] = nil
-  redirect_to "/top"
+  @uri = "/top"
+  return true
  end
 
-  def checkLogin
+  def checksession
 	flash[:uri] = request.original_url
 
 	if session[:user_id].nil?
-	  redirect_to("/login") and return false
+	  @uri = "/login"
+	  return false
 	else
 
 	  # find user by ID
 	  begin
 		userinfo = Users.find(session[:user_id])
 	  rescue ActiveRecord::RecordNotFound => e
-		redirect_to("/login") and return false
+		@uri = "/login"
+		return false
 	  end
 
 	end
 
+	return true
   end
 
   def require_getinfo
