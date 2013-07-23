@@ -3,6 +3,7 @@ class BlogsController < ApplicationController
   def index
     #checkLogin
 	@title = "Manager Blogs"
+	#@blogsList = Blog.paginate :page => params[:page], :per_page => 5
 	@blogsList = Blog.all
   end
 
