@@ -1,4 +1,19 @@
-<div class="section">
+<%= link_to 'Home', "/top" %> ||
+<%= link_to 'New Blog', "/blogs/new" %>
+<% @blogsList.each do |blog| %>
+<div class="post">
+    <h2 class="title"><a href="#"><%=blog.title %></a></h2>
+    <p class="meta"><span class="date">created : <%=Fdate.string2Datez(blog.created_at)%></span><span class="posted">Posted by <a href="#">Someone</a></span></p>
+    <div style="clear: both;">&nbsp;</div>
+    <div class="entry">
+        <p><%=blog.content %></p>
+        <p class="links">
+          <%= link_to '(Read More)', "/blogs/detail/#{blog.id}" %>
+          <a href="#" title="b0x" class="comments">Modified : <%=Fdate.string2Datez(blog.updated_at) %></a></p>
+    </div>
+</div>
+<% end %>
+<!--<div class="section">
   <h2>Blogs</h2>
 
   <ul>
@@ -18,3 +33,6 @@
   <%= link_to 'Back', "/top" %>
   <%= link_to 'New Blog', "/blogs/new" %>
 </div>
+-->
+<%= link_to 'Home', "/top" %> ||
+<%= link_to 'New Blog', "/blogs/new" %>

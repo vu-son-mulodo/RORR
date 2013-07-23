@@ -55,6 +55,14 @@ class BlogsController < ApplicationController
   end
 
   def detail
+    @title = "Detail Blog"
+
+    begin
+      @blog = Blog.find(params[:id])
+    rescue ActiveRecord::RecordNotFound => e
+      render(:text => "Not found")
+    end
+
   end
 
 end
