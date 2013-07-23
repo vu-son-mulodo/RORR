@@ -26,20 +26,18 @@ module UsersHelper
   return true
  end
 
-  def checksession
+  def checkLogin
 	flash[:uri] = request.original_url
 
 	if session[:user_id].nil?
-	  @uri = "/login"
-	  return false
+	  redirect_to "/login"
 	else
 
 	  # find user by ID
 	  begin
 		userinfo = Users.find(session[:user_id])
 	  rescue ActiveRecord::RecordNotFound => e
-		@uri = "/login"
-		return false
+		redirect_to "/login"
 	  end
 
 	end
