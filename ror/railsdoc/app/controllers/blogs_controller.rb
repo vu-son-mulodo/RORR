@@ -3,8 +3,8 @@ class BlogsController < ApplicationController
   def index
     #checkLogin
 	@title = "Manager Blogs"
-	#@blogsList = Blog.paginate :page => params[:page], :per_page => 5
-	@blogsList = Blog.all
+
+	@blogsList = Blog.paginate(:page => params[:page],:per_page => 5).order('updated_at DESC')
   end
 
   def new
