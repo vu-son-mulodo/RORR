@@ -30226,3 +30226,71 @@ Connecting to database specified by database.yml
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
   [1m[35m (0.0ms)[0m  begin transaction
   [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUsers Load (2.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "abc"]]
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."password" = 'X0QsSmdjyOT+KhhpZYrFng==
+' AND "users"."username" = 'minhphuc86' LIMIT 1[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."password" = 'LpWsckqjnwP+KhhpZYrFng==
+' AND "users"."username" = 'minhphuc86' LIMIT 1
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."password" = '2Fzs8kPNYE0=
+' AND "users"."username" = 'minhphuc86' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."password" = 'LpWsckqjnwP+KhhpZYrFng==
+' AND "users"."username" = 'minhphuc86' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "abc"]]
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (2.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."password" = 'yUI5aWAFeun+KhhpZYrFng==
+' AND "users"."username" = 'minhphuc86' LIMIT 1[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."password" = 'yUI5aWAFeun+KhhpZYrFng==
+' AND "users"."username" = 'minhphuc86' LIMIT 1
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."password" = 'yUI5aWAFeun+KhhpZYrFng==
+' AND "users"."username" = 'minhphuc86' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."password" = 'X0QsSmdjyOT+KhhpZYrFng==
+' AND "users"."username" = 'minhphuc86' LIMIT 1
+  [1m[36mUsers Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."password" = 'LpWsckqjnwP+KhhpZYrFng==
+' AND "users"."username" = 'minhphuc86' LIMIT 1[0m
+  [1m[35mUsers Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."password" = '2Fzs8kPNYE0=
+' AND "users"."username" = 'minhphuc86' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m

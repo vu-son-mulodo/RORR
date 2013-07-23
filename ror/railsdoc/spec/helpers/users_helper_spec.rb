@@ -26,9 +26,6 @@ describe UsersHelper do
   describe "actionLogin" do
 
 	it ".true" do
-	  expect(account[:username]).not_to eq nil
-	  expect(account[:password]).not_to eq nil
-
 	  expect(helper.actionLogin(account[:username],account[:password])).to eq true
 	  #upcase username
 	  expect(helper.actionLogin(account[:username].upcase!,account[:password])).to eq true
