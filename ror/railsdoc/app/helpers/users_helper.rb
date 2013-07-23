@@ -65,9 +65,15 @@ module UsersHelper
   end
 
   def rememberLogin(username,password)
-	data = TBlowfish.encrypt("#{username} #{password}")
-	cookies[:mem] = { :value => data, :expires => Time.now + 3600}
-	return data
+
+	if (!username.nil? && !password.nil?)
+	  data = TBlowfish.encrypt("#{username} #{password}")
+	  cookies[:mem] = { :value => data, :expires => Time.now + 3600}
+	  return data
+	else
+	  return nil
+	end
+
   end
 
   def getAccountfromCookie()
