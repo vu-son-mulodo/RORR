@@ -21,13 +21,20 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+  gem 'rspec-rails', '~> 2.0'
+end
+
 gem 'jquery-rails'
 
 gem 'strong_parameters'
 
 gem 'crypt', '~> 1.1.4'
 
-gem 'rspec-rails', '~> 2.0'
+
 
 
 # To use ActiveModel has_secure_password
