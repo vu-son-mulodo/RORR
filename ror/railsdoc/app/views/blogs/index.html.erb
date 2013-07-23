@@ -1,6 +1,12 @@
 <%= link_to 'New Blog', "/blogs/new" %>
-<%= will_paginate @blogsList %>
+<div class="apple_pagination">
+  <%= will_paginate @blogsList %>
+</div>
+
 <%= render :partial => "blogItem", :collection => @blogsList %>
-<%= will_paginate @blogsList %>
+<br/>
+<div class="apple_pagination">
+  <%= will_paginate @blogsList %>
+</div>
 <br/>
 <%= link_to 'New Blog', "/blogs/new" %>
