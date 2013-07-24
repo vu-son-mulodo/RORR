@@ -30,7 +30,18 @@ module UsersHelper
 	flash[:uri] = request.original_url
 
 	if session[:user_id].nil?
-	  redirect_to "/login"
+	  @cookie = getAccountfromCookie()
+
+	  if @cookie != false
+		actionLogin(@cookie[0],@cookie[1])
+	  end
+
+	  unless @uri.nil?
+		redirect_to @uri
+	  else
+		redirect_to "/login"
+	  end
+
 	else
 
 	  # find user by ID
@@ -82,7 +93,7 @@ module UsersHelper
 	  account = TBlowfish.decrypt(cookies[:mem]).split(/ /)
 	  return account
 	end
-
+	@error = "Username or Password wrong"
 	return false
   end
 

@@ -21,14 +21,6 @@ class TopController < ApplicationController
 		end
 
 		redirect_to @uri
-
-	  end
-
-	else
-	  @cookie = getAccountfromCookie()
-
-	  if @cookie != false
-		actionLogin(@cookie[0],@cookie[1])
 	  end
 
 	end
