@@ -11,17 +11,15 @@ require 'spec_helper'
 #   end
 # end
 describe UsersHelper do
+  fixtures :users
 
-  account = {
-	:fullname => "Lương Ngọc Minh Phúc",
-	:username => "minhphuc86",
-	:password => "t4Js40!#%^!@$",
-	:password_confirmation => "t4Js40!#%^!@$"
-  }
-  minhphuc = Users.find_by_username(account[:username])
-  if minhphuc.nil?
-	Users.create!(account)
-  end
+	account = {
+	  :fullname => "Lương Ngọc Minh Phúc",
+	  :username => "minhphuc86",
+	  :password => "t4Js40!#%^!@$",
+	  :password_confirmation => "t4Js40!#%^!@$"
+	}
+
 
   describe "actionLogin" do
 
@@ -74,6 +72,7 @@ describe UsersHelper do
 	end
 
 	it ".Get_Session_is_existed" do
+	  minhphuc = Users.find_by_username(account[:username])
 	  session[:user_id] = minhphuc.id
 	  expect(session[:user_id]).to eq minhphuc.id
 	  expect(helper.require_getinfo).to eq account[:fullname]
@@ -100,6 +99,7 @@ describe UsersHelper do
 	  expect(helper.rememberLogin(account[:username],account[:password])).to eq data
 	  expect(helper.getAccountfromCookie).to eq [account[:username],account[:password]]
 	end
+
   end
 
 end

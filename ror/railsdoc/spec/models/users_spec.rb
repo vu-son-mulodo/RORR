@@ -11,7 +11,6 @@ describe Users do
 		:password => "t4Js40!#%^!@$",
 		:password_confirmation => "t4Js40!#%^!@$"
 	  }
-	  Users.create!(account)
 	  minhphuc = Users.find_by_username(account[:username])
 
 	  expect(Users.checkLogin(account[:username],account[:password])).to eq minhphuc
@@ -58,10 +57,10 @@ describe Users do
 
 	it ".validate_record_create" do
 	  expect(Users).to have(1).records
-	  Users.create!(:fullname => "Lương Ngọc Minh Phúc", :username => "minhphuc86", :password => "123123123", :password_confirmation => "123123123")
+	  Users.create!(:fullname => "Lê Minh Hoàng", :username => "le.hoang", :password => "123123123", :password_confirmation => "123123123")
 	  expect(Users).to have(2).record
-	  expect(Users.where(:fullname => "Lương Ngọc Minh Phúc")).to have(1).record
-	  expect(Users.where(:username => "minhphuc86")).to have(1).record
+	  expect(Users.where(:fullname => "Lê Minh Hoàng")).to have(1).record
+	  expect(Users.where(:username => "le.hoang")).to have(1).record
 	end
 
   end
@@ -91,10 +90,10 @@ describe Users do
 	end
 
 	it ".validate_record_update" do
-	  expect(Users.where(:fullname => "Nguyễn Minh Hoàng",:username => "nguyen.hoang")).to have(1).record
-	  Users.update(1,:fullname => "Lương Ngọc Minh Phúc")
-	  expect(Users.where(:fullname => "Nguyễn Minh Hoàng",:username => "nguyen.hoang")).to have(0).record
-	  expect(Users.where(:fullname => "Lương Ngọc Minh Phúc",:username => "nguyen.hoang")).to have(1).record
+	  expect(Users.where(:fullname => "Lương Ngọc Minh Phúc",:username => "minhphuc86")).to have(1).record
+	  Users.update(1,:fullname => "Nguyễn Minh Hoàng")
+	  expect(Users.where(:fullname => "Nguyễn Minh Hoàng",:username => "minhphuc86")).to have(1).record
+	  expect(Users.where(:fullname => "Lương Ngọc Minh Phúc",:username => "minhphuc86")).to have(0).record
 	end
 
   end
