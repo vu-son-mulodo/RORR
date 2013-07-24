@@ -24,6 +24,7 @@ class TBlowfish
   end
 
   def initialize(key = nil)
+	require 'rubygems'
 	require 'crypt/blowfish'
 	require "base64"
 
@@ -33,14 +34,14 @@ class TBlowfish
 	  @key = "abc123zx"
 	end
 
-	  @blowfish = Crypt::Blowfish.new(@key)
+	  #@blowfish = Crypt::Blowfish.new(@key)
   end
 
   def setKey(key)
 
 	unless key.nil?
 	  @key = key
-	  @blowfish = Crypt::Blowfish.new(key)
+	  #@blowfish = Crypt::Blowfish.new(key)
 	end
 
   end
@@ -97,6 +98,7 @@ class TBlowfish
 =begin
   encrypt data
 =end
+=begin
   def encrypt(data)
 	array = splitencrypt(data)
 	encryptedBlock = ''
@@ -108,10 +110,15 @@ class TBlowfish
 
 	return Base64.encode64(encryptedBlock)
   end
+=end
+  def encrypt(data)
+	return Base64.encode64(data)
+  end
 
 =begin
   decrypt data
 =end
+=begin
   def decrypt(data)
 	data = Base64.decode64(data)
 	array = splitdecrypt(data)
@@ -124,5 +131,9 @@ class TBlowfish
 	end
 
 	return decryptedBlock.tr(["00"].pack('H*'), "")
+  end
+=end
+  def decrypt(data)
+	return Base64.decode64(data)
   end
 end

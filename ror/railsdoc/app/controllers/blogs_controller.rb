@@ -56,13 +56,15 @@ class BlogsController < ApplicationController
   end
 
   def detail
-    @title = "Detail Blog"
 
-    begin
+	begin
       @blog = Blog.find(params[:id])
     rescue ActiveRecord::RecordNotFound => e
       render(:text => "Not found")
     end
+
+    @title = "Detail Blog"
+    @meta_keywords = @blog.title
 
   end
 
