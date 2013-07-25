@@ -1,0 +1,447 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-25 13:07:17 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-25 13:10:14 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-25 13:11:07 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (45.2ms)
+Compiled blogs.css  (48ms)  (pid 1484)
+Compiled style.css  (0ms)  (pid 1484)
+Compiled top.css  (1ms)  (pid 1484)
+Compiled users.css  (1ms)  (pid 1484)
+Compiled application.css  (79ms)  (pid 1484)
+Compiled jquery.js  (1ms)  (pid 1484)
+Compiled jquery_ujs.js  (0ms)  (pid 1484)
+Compiled blogs.js  (120ms)  (pid 1484)
+Compiled top.js  (59ms)  (pid 1484)
+Compiled users.js  (99ms)  (pid 1484)
+Compiled application.js  (340ms)  (pid 1484)
+  Rendered layouts/_menu.html.erb (1.0ms)
+  Rendered layouts/_banner.html.erb (0.5ms)
+Completed 500 Internal Server Error in 562ms
+
+ActionView::Template::Error (undefined method `require_getCat' for #<TopController:0x007fd44c31cd88>):
+    14:    <div class="contentBox">
+    15: 	  <div class="innerBox">
+    16: 		<div class="contentTitle">
+    17: 		  <span class="title"><%= require_getCat %></span>
+    18: 		</div>
+    19: 		<div class="contentText">
+    20: 		  <%= yield %>
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3480522975913662649_70274892434500'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /blogs.css - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /top.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /blogs.js - 200 OK (2ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /top.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:12:10 +0700
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 13:12:11 +0700
+Served asset /background.png - 200 OK (11ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 13:12:11 +0700
+Served asset /anoceanofsky.jpg - 200 OK (21ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 13:12:11 +0700
+Served asset /footer.png - 200 OK (6ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 13:12:11 +0700
+Served asset /content_back.png - 200 OK (7ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 13:12:11 +0700
+Served asset /tab.png - 200 OK (29ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 13:14:00 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-25 13:14:45 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:14:56 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-25 13:15:10 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:11 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:15:14 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:15:23 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (2.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:15:54 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:19:38 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:19:40 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:19:40 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:19:40 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:20:08 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:21:07 +0700
+
+SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
+/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: syntax error, unexpected $end, expecting keyword_end
+	subject = "#{controllerName}  »  #{controllerAction}"
+	                                ^):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/top_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
