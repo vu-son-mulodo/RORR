@@ -445,3 +445,4478 @@ SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6
   Rendered /Users/vinhtt/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 13:54:28 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.4ms)
+Compiled jquery.js  (23ms)  (pid 44140)
+Compiled jquery_ujs.js  (0ms)  (pid 44140)
+Compiled application.js  (36ms)  (pid 44140)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_banner.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 81ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /application.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /blogs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /top.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /blogs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /top.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /background.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /content_back.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 13:54:29 +0700
+Served asset /footer.png - 304 Not Modified (1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"shM+lBn0HQnGgnvxFbU5K0yoEGLz4nDtuzf1hqRyuiM=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"1"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 36ms (ActiveRecord: 23.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Processing by UsersController#new as HTML
+  [1m[35mUsers Load (2.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (28.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 52ms (Views: 48.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:18 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 13:55:19 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 13:55:19 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 13:55:19 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 13:55:19 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 13:55:29 +0700
+Served asset /tab.png - 304 Not Modified (1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (2.7ms)
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /select.png - 200 OK (4ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /remove.png - 200 OK (4ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /add.png - 200 OK (4ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /left.png - 200 OK (7ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /right.png - 200 OK (3ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /botright.png - 200 OK (4ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /botleft.png - 200 OK (4ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 13:55:33 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 13:55:37 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 13:55:44 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://localhost:3000/users
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (0.8ms)
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 13:55:45 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 13:55:53 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (0.6ms)
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 13:55:57 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 13:55:59 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 13:56:00 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 13:56:10 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:47 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:48 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:00:48 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:00:48 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:00:48 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:00:48 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:00:50 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Processing by UsersController#new as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 11ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:00:51 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:00:53 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:00:57 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 14:00:57 +0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `downcase!' for nil:NilClass):
+  app/models/users.rb:27:in `checkLogin'
+  app/helpers/users_helper.rb:5:in `actionLogin'
+  app/helpers/users_helper.rb:37:in `checkLogin'
+  app/controllers/users_controller.rb:10:in `new'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/vinhtt/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/vinhtt/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:01:08 +0700
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `downcase!' for nil:NilClass):
+  app/models/users.rb:27:in `checkLogin'
+  app/helpers/users_helper.rb:5:in `actionLogin'
+  app/helpers/users_helper.rb:37:in `checkLogin'
+  app/controllers/users_controller.rb:4:in `index'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/vinhtt/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/vinhtt/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:01:21 +0700
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `downcase!' for nil:NilClass):
+  app/models/users.rb:27:in `checkLogin'
+  app/helpers/users_helper.rb:5:in `actionLogin'
+  app/helpers/users_helper.rb:37:in `checkLogin'
+  app/controllers/users_controller.rb:4:in `index'
+
+
+  Rendered /Users/vinhtt/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/vinhtt/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/vinhtt/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Completed 302 Found in 14ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /top.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /blogs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /style.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /blogs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /top.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /background.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (3ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /content_back.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:10:40 +0700
+Served asset /footer.png - 304 Not Modified (1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"1"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (29.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (1.1ms)
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 20.7ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /select.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /botleft.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /botright.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:10:51 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:10:57 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:10:59 +0700
+Served asset /tab.png - 304 Not Modified (1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:11:00 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Processing by UsersController#new as HTML
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:11:44 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:11:49 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:11:50 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Processing by UsersController#new as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:11:56 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:11:57 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:11:57 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:11:57 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:11:57 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:11:57 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+  Rendered layouts/_banner.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 193ms (Views: 192.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /style.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /blogs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /top.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /blogs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /top.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /background.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /footer.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:21:20 +0700
+Served asset /content_back.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /tab.png - 304 Not Modified (33ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Completed 302 Found in 28ms (ActiveRecord: 16.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (74.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 94.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:21:24 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:21:25 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"1"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 12ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (41.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (1.2ms)
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 64ms (Views: 20.9ms | ActiveRecord: 41.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /select.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /left.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /right.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /botleft.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /botright.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:25:37 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:25:43 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:25:44 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:25:44 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:25:44 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:25:44 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started POST "/users/new" for 127.0.0.1 at 2013-07-25 14:34:31 +0700
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"fullname"=>"ksjfdskf", "username"=>"kdjfsdkgsd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'kdjfsdkgsd' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("fullname", "password", "username") VALUES (?, ?, ?)[0m  [["fullname", "ksjfdskf"], ["password", "MTIzNDU2"], ["username", "kdjfsdkgsd"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mUsers Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'kdjfsdkgsd' AND "users"."id" != 35) LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 40ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (1.3ms)
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /botleft.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /botright.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:34:32 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:34:59 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"s"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%s%')[0m
+  Rendered users/_userList.html.erb (1.1ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:00 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"ss"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%ss%')[0m
+  Rendered users/_userList.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:00 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"s"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%s%')[0m
+  Rendered users/_userList.html.erb (0.5ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:00 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (1.0ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:03 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"s"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%s%')[0m
+  Rendered users/_userList.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:04 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (0.9ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:06 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"j"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%j%')[0m
+  Rendered users/_userList.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:06 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"js"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%js%')[0m
+  Rendered users/_userList.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:06 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"j"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%j%')[0m
+  Rendered users/_userList.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:07 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (1.0ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:08 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"t"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%t%')[0m
+  Rendered users/_userList.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:09 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (0.8ms)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:09 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"a"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%a%')[0m
+  Rendered users/_userList.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:10 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (0.9ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:10 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"s"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%s%')[0m
+  Rendered users/_userList.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:11 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (0.9ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:11 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"a"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%a%')[0m
+  Rendered users/_userList.html.erb (0.5ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:12 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (1.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:39 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"s"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%s%')[0m
+  Rendered users/_userList.html.erb (0.4ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:40 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (1.3ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:40 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"k"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%k%')[0m
+  Rendered users/_userList.html.erb (0.5ms)
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:40 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"ks"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%ks%')[0m
+  Rendered users/_userList.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:41 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"ksk"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%ksk%')[0m
+  Rendered users/_userList.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:41 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"ks"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%ks%')[0m
+  Rendered users/_userList.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:41 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"k"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%k%')[0m
+  Rendered users/_userList.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:41 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (1.0ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:42 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"s"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%s%')[0m
+  Rendered users/_userList.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:42 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"ss"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%ss%')[0m
+  Rendered users/_userList.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:42 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"s"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%s%')[0m
+  Rendered users/_userList.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:35:43 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>""}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%%')[0m
+  Rendered users/_userList.html.erb (1.0ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (2.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (1.5ms)
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 63.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /blogs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /style.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /top.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /blogs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /top.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /select.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /remove.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /background.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (2ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /content_back.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /left.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /right.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /botleft.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /botright.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:44:14 +0700
+Served asset /footer.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:44:15 +0700
+Served asset /tab.png - 304 Not Modified (1ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 14:44:16 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"s"}
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE (username LIKE '%s%')
+  Rendered users/_userList.html.erb (0.9ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:44:21 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+  [1m[36mUsers Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (34.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:44:24 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:46:32 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+Redirected to http://localhost:3000/users
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:46:32 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (1.7ms)
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /botright.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /botleft.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:46:33 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:08 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:51:09 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:51:09 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:51:09 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:51:09 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:51:14 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/top/index" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:51:15 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 21.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:51:16 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMXM=' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:54:09 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (1.0ms)
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 14:55:55 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:55:56 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:55:56 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 14:55:56 +0700
+Served asset /botright.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 14:55:56 +0700
+Served asset /botleft.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 14:55:56 +0700
+Served asset /left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:55:56 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 14:55:56 +0700
+Served asset /right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:55:56 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:56:01 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:56:42 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:56:46 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:56:52 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:56:53 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:56:53 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:56:53 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:56:53 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 14:56:53 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMXM=' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 14:58:41 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'MTIzNDU2' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 25.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:01:55 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (0.9ms)
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /botright.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /botleft.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:02:32 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:51 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:03:52 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:03:52 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:03:52 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:03:52 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:03:54 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:03:55 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:03:55 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:03:55 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:03:55 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 15:03:55 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (0.9ms)
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /botleft.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /botright.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:05:51 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:05:56 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (1.0ms)
+  Rendered users/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 20.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:28 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /botleft.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /botright.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:15:29 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:31 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:15:32 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:15:32 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:15:32 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:15:32 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 15:15:36 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:15:37 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:15:46 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A3u7DPE/5eJ7ThRilsdIB64BZ/teeBGZxhaF6bH2eN8=", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:15:46 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (1.6ms)
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /left.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /right.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /botleft.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /botright.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:15:47 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar(100), "username" varchar(100), "password" varchar(100)) 
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130722063446')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130710080708')[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:24:15 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (1.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (1.5ms)
+  Rendered users/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 62.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /blogs.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /top.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /jquery.js - 304 Not Modified (33ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /blogs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /top.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /background.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /remove.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /select.png - 304 Not Modified (5ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /add.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /left.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /content_back.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /right.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /botleft.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /botright.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:24:16 +0700
+Served asset /footer.png - 304 Not Modified (2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Processing by TopController#logout as HTML
+Redirected to http://localhost:3000/top
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:24:18 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /tab.png - 304 Not Modified (1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/login
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (34.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 53ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 15:24:20 +0700
+Served asset /background.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 15:24:21 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 15:24:21 +0700
+Served asset /content_back.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 15:24:21 +0700
+Served asset /footer.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 15:24:21 +0700
+Served asset /tab.png - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fullname" varchar(100), "username" varchar(100), "password" varchar(100)) 
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130722063446')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130710080708')[0m
