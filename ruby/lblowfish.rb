@@ -89,6 +89,7 @@ end
 =begin
   DEMO test blowfish encrypt
 =end
+#=begin
 key = "hTUCiMzJaFVHH3wnHnZaAwArudSPFbnn6Mt6HQpxSQfYyPXyjPYM24Vy"
 plainBlock = 'api-forandroidpg-keymaster@@00R7H-w2iW6N2okUJnCPPJlwBSDDWGArVuDLbnLhmIDVkQ@@RESTMAIL_getinfo'
 #plainBlock = 'apiforandroidpgk'
