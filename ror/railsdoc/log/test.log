@@ -1,4 +1,5 @@
 Connecting to database specified by database.yml
+<<<<<<< HEAD
 Unable to load user, underlying cause No such file to load -- user 
 
  /Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
@@ -471,3 +472,1202 @@ Connecting to database specified by database.yml
   [1m[35m (0.0ms)[0m  rollback transaction
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.0ms)[0m  rollback transaction
+=======
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:39:21 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:39:21 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.4ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:39:21 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:39:21 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:45:54 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_banner.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:45:54 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:45:54 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:45:54 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:47:23 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:47:23 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:47:23 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:47:23 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:49:10 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_banner.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:49:10 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:49:10 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:49:10 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:49:43 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:49:43 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 4.0ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:49:43 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:49:43 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:51:45 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:51:45 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:51:45 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:53:28 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:53:28 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:53:28 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:53:28 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mDELETE FROM "blogs";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.8ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'blogs';[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM "users";
+  [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.7ms)[0m  DELETE FROM sqlite_sequence where name = 'users';
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:54:55 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (29.4ms)
+Completed 200 OK in 54ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:54:55 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:57:32 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:57:32 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16ms (Views: 7.6ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:57:32 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:57:32 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:58:03 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:58:03 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMWRkZHNkZnNkZnNm' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 14:58:03 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 14:58:03 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:04:34 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:04:34 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.5ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:04:34 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:04:34 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:06:49 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:06:49 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 4.2ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 15:06:49 +0700
+Processing by UsersController#new as HTML
+Redirected to http://www.example.com/login
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:06:49 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:07:29 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:07:29 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 4.5ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:07:30 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:07:30 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:08:41 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_banner.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:08:41 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:08:41 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:08:41 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:11:36 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:11:36 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:11:36 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:11:36 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:14:51 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:14:51 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:14:51 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:14:51 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:19:06 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_banner.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:19:06 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:19:06 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:19:06 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:19:21 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_menu.html.erb (0.9ms)
+  Rendered layouts/_banner.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:19:21 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:19:21 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:19:21 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:20:01 +0700
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:21:22 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:21:22 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 4.1ms | ActiveRecord: 1.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:21:22 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:21:22 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:25:40 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:25:40 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 14ms (Views: 4.6ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:25:40 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:25:40 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:32:16 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_menu.html.erb (0.6ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:32:16 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+  Rendered top/login.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 4.2ms | ActiveRecord: 1.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:32:16 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:32:16 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:37:52 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:37:52 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+Redirected to http://www.example.com/users
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:37:52 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (38.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (0.9ms)
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_banner.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 6.1ms | ActiveRecord: 38.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:37:52 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:37:52 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://www.example.com/users
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:37:52 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (0.5ms)
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_banner.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:38:46 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_menu.html.erb (0.7ms)
+  Rendered layouts/_banner.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:38:46 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+Redirected to http://www.example.com/users
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:38:46 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (36.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (0.8ms)
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 5.7ms | ActiveRecord: 36.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:38:46 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:38:46 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://www.example.com/users
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:38:46 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (0.3ms)
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_banner.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 15:38:47 +0700
+Processing by UsersController#new as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms)
+Started POST "/users/new" for 127.0.0.1 at 2013-07-25 15:38:47 +0700
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"fullname"=>"FullName", "username"=>"username", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'username' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fullname", "password", "username") VALUES (?, ?, ?)  [["fullname", "FullName"], ["password", "MTIzNDU2"], ["username", "username"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'username' AND "users"."id" != 2) LIMIT 1
+Redirected to http://www.example.com/users
+Completed 302 Found in 13ms (ActiveRecord: 0.8ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:38:47 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (0.6ms)
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_banner.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:58:36 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_menu.html.erb (0.4ms)
+  Rendered layouts/_banner.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:58:36 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+Redirected to http://www.example.com/users
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:58:36 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (35.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (0.8ms)
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 5.6ms | ActiveRecord: 35.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/login" for 127.0.0.1 at 2013-07-25 15:58:36 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 15:58:36 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1[0m
+Redirected to http://www.example.com/users
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:58:36 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (0.3ms)
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_banner.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 15:58:37 +0700
+Processing by UsersController#new as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+Started POST "/users/new" for 127.0.0.1 at 2013-07-25 15:58:37 +0700
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"fullname"=>"FullName", "username"=>"username", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'username' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("fullname", "password", "username") VALUES (?, ?, ?)  [["fullname", "FullName"], ["password", "MTIzNDU2"], ["username", "username"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'username' AND "users"."id" != 2) LIMIT 1
+Redirected to http://www.example.com/users
+Completed 302 Found in 13ms (ActiveRecord: 0.8ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 15:58:37 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (0.6ms)
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 16:13:55 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 16:13:55 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 16:17:52 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 16:17:52 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2013-07-25 16:17:52 +0700
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"username"=>"mulodovn", "password"=>"[FILTERED]"}, "checkbox"=>{"remember"=>"0"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'mulodovn' AND "users"."password" = 'bXVsb2RvNTkzMQ==' LIMIT 1
+Redirected to http://www.example.com/users
+Completed 302 Found in 9ms (ActiveRecord: 1.2ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 16:17:52 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (5.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (0.8ms)
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 13ms (Views: 5.8ms | ActiveRecord: 5.2ms)
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 16:17:52 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_banner.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+Started POST "/users/new" for 127.0.0.1 at 2013-07-25 16:17:52 +0700
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"fullname"=>"FullName", "username"=>"username", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'username' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("fullname", "password", "username") VALUES (?, ?, ?)[0m  [["fullname", "FullName"], ["password", "MTIzNDU2"], ["username", "username"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'username' AND "users"."id" != 2) LIMIT 1[0m
+Redirected to http://www.example.com/users
+Completed 302 Found in 13ms (ActiveRecord: 0.7ms)
+Started GET "/users" for 127.0.0.1 at 2013-07-25 16:17:53 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (0.6ms)
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_banner.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (1.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 16:19:10 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_menu.html.erb (0.5ms)
+  Rendered layouts/_banner.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/login" for 127.0.0.1 at 2013-07-25 16:19:10 +0700
+Processing by TopController#login as HTML
+  Rendered top/login.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  Rendered layouts/_banner.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+>>>>>>> 9143662a37603488209dbe53ca057aa5587c6768
