@@ -201,3 +201,13 @@ p {text-align: left;}
 color: red;
 }
 
+.contentBox .innerBox .contentTitle .title {
+    border: medium none;
+    color: #611F0D;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: -3px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #B5B5B5;
+}
+
