@@ -63,7 +63,7 @@ class BlogsController < ApplicationController
       render(:text => "Not found")
     end
 
-    @title = "Detail Blog"
+    @title = @blog.title
     @meta_keywords = @blog.title
 
   end
