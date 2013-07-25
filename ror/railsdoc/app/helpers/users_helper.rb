@@ -22,6 +22,7 @@ module UsersHelper
 
  def actionLogout
   session[:user_id] = nil
+  cookies[:mem] = nil
   @uri = "/top"
   return true
  end
