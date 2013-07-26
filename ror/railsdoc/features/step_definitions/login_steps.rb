@@ -1,4 +1,6 @@
-Given(/^I visit "(.*?)"$/) do |arg1|
+@user =nil
+Given(/^I visit "(.*?)" page$/) do |arg1|
+  @user = FactoryGirl.create(:userss)
   visit arg1
 end
 
