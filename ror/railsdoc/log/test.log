@@ -1,4 +1,478 @@
 Connecting to database specified by database.yml
+<<<<<<< HEAD
+Unable to load user, underlying cause No such file to load -- user 
+
+ /Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:312:in `depend_on'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:225:in `require_dependency'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:779:in `each'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:762:in `fixtures'
+/Users/nguyenxuanhoang/Desktop/source/Ruby/RORR/ror/railsdoc/spec/helpers/users_helper_spec.rb:14:in `block in <top (required)>'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/example_group.rb:245:in `module_eval'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/example_group.rb:245:in `subclass'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/example_group.rb:231:in `describe'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/dsl.rb:18:in `describe'
+/Users/nguyenxuanhoang/Desktop/source/Ruby/RORR/ror/railsdoc/spec/helpers/users_helper_spec.rb:13:in `<top (required)>'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/configuration.rb:896:in `load'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/configuration.rb:896:in `block in load_spec_files'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/configuration.rb:896:in `each'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/configuration.rb:896:in `load_spec_files'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/command_line.rb:22:in `run'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/runner.rb:80:in `run'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/runner.rb:17:in `block in autorun'
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "fullname", "username", "password") VALUES (1, 'Lương Ngọc Minh Phúc', 'minhphuc86', 'dDRKczQwISMlXiFAJA==')[0m
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' LIMIT 1
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "abc"]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'dDRKczQwISMlXiFAJA==' LIMIT 1[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'dDRKczQwISMlXiFAJA==' LIMIT 1
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'dDRKczQwISMlXiFAJA==' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'VDRKUzQwISMlXiFAJA==' LIMIT 1
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'dDRqczQwISMlXiFAJA==' LIMIT 1[0m
+  [1m[35mUsers Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'YWJj' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Unable to load user, underlying cause No such file to load -- user 
+
+ /Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:317:in `rescue in depend_on'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:312:in `depend_on'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activesupport-3.2.13/lib/active_support/dependencies.rb:225:in `require_dependency'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:767:in `try_to_load_dependency'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:782:in `block in require_fixture_classes'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:779:in `each'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:779:in `require_fixture_classes'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/activerecord-3.2.13/lib/active_record/fixtures.rb:762:in `fixtures'
+/Users/nguyenxuanhoang/Desktop/source/Ruby/RORR/ror/railsdoc/spec/models/users_spec.rb:4:in `block in <top (required)>'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/example_group.rb:245:in `module_eval'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/example_group.rb:245:in `subclass'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/example_group.rb:231:in `describe'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/dsl.rb:18:in `describe'
+/Users/nguyenxuanhoang/Desktop/source/Ruby/RORR/ror/railsdoc/spec/models/users_spec.rb:3:in `<top (required)>'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/configuration.rb:896:in `load'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/configuration.rb:896:in `block in load_spec_files'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/configuration.rb:896:in `each'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/configuration.rb:896:in `load_spec_files'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/command_line.rb:22:in `run'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/runner.rb:80:in `run'
+/Users/nguyenxuanhoang/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/rspec-core-2.14.3/lib/rspec/core/runner.rb:17:in `block in autorun'
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM "users"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "users" ("id", "fullname", "username", "password") VALUES (1, 'Lương Ngọc Minh Phúc', 'minhphuc86', 'dDRKczQwISMlXiFAJA==')[0m
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' LIMIT 1
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'dDRKczQwISMlXiFAJA==' LIMIT 1[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'dDRKczQwISMlXiFAJA==' LIMIT 1
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'dDRKczQwISMlXiFAJA==' LIMIT 1[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'dDRKczQwISMlXiFAJA==' LIMIT 1
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'VDRKUzQwISMlXiFAJA==' LIMIT 1[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'dDRqczQwISMlXiFAJA==' LIMIT 1
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'minhphuc86' AND "users"."password" = 'YWJj' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'le.hoang' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("fullname", "password", "username") VALUES (?, ?, ?)[0m  [["fullname", "Lê Minh Hoàng"], ["password", "MTIzMTIzMTIz"], ["username", "le.hoang"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."fullname" = 'Lê Minh Hoàng'
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'le.hoang'[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = '1234 56' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = '1234 56' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'abc' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'abc' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUsers Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = '' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = '' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUsers Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "password" = '' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUsers Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUsers Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'abc' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'abc' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUsers Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "password" = 'abc' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36mUsers Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."fullname" = 'Lương Ngọc Minh Phúc' AND "users"."username" = 'minhphuc86'
+  [1m[36mUsers Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  UPDATE "users" SET "fullname" = 'Nguyễn Minh Hoàng' WHERE "users"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."fullname" = 'Nguyễn Minh Hoàng' AND "users"."username" = 'minhphuc86'
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."fullname" = 'Lương Ngọc Minh Phúc' AND "users"."username" = 'minhphuc86'[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "password" = '123456' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUsers Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.7ms)[0m  [1mUPDATE "users" SET "password" = '123' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUsers Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "users" SET "password" = '112323' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUsers Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "users" SET "password" = '112' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35mUsers Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mUPDATE "users" SET "password" = '123456' WHERE "users"."id" = 1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsers Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'minhphuc86' AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (24.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "title", "content", "created_at", "updated_at") VALUES (1, 'Linux', 'Linux is an operating system that evolved from a kernel created by Linus Torvalds when he was a student at the University of Helsinki. Generally, it is obvious to most people what Linux is. However, both for political and practical reasons, it needs to be explained further.', '2013-07-25 08:32:03', '2013-07-25 08:32:03')[0m
+  [1m[35m (7.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "title", "content", "created_at", "updated_at") VALUES (1, 'Linux', 'Linux is an operating system that evolved from a kernel created by Linus Torvalds when he was a student at the University of Helsinki. Generally, it is obvious to most people what Linux is. However, both for political and practical reasons, it needs to be explained further.', '2013-07-25 08:33:17', '2013-07-25 08:33:17')[0m
+  [1m[35m (5.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "title", "content", "created_at", "updated_at") VALUES (1, 'Linux', 'Linux is an operating system that evolved from a kernel created by Linus Torvalds when he was a student at the University of Helsinki. Generally, it is obvious to most people what Linux is. However, both for political and practical reasons, it needs to be explained further.', '2013-07-25 08:33:27', '2013-07-25 08:33:27')[0m
+  [1m[35m (5.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "title", "content", "created_at", "updated_at") VALUES (1, 'Linux', 'Linux is an operating system that evolved from a kernel created by Linus Torvalds when he was a student at the University of Helsinki. Generally, it is obvious to most people what Linux is. However, both for political and practical reasons, it needs to be explained further.', '2013-07-25 08:36:02', '2013-07-25 08:36:02')[0m
+  [1m[35m (5.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "title", "content", "created_at", "updated_at") VALUES (1, 'Linux', 'Linux is an operating system that evolved from a kernel created by Linus Torvalds when he was a student at the University of Helsinki. Generally, it is obvious to most people what Linux is. However, both for political and practical reasons, it needs to be explained further.', '2013-07-25 08:36:28', '2013-07-25 08:36:28')[0m
+  [1m[35m (5.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "blogs" SET "title" = 'Ha noi', "updated_at" = '2013-07-25 08:36:28.228140' WHERE "blogs"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "title", "content", "created_at", "updated_at") VALUES (1, 'Linux', 'Linux is an operating system that evolved from a kernel created by Linus Torvalds when he was a student at the University of Helsinki. Generally, it is obvious to most people what Linux is. However, both for political and practical reasons, it needs to be explained further.', '2013-07-25 08:46:16', '2013-07-25 08:46:16')[0m
+  [1m[35m (35.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "title", "content", "created_at", "updated_at") VALUES (1, 'Linux', 'Linux is an operating system that evolved from a kernel created by Linus Torvalds when he was a student at the University of Helsinki. Generally, it is obvious to most people what Linux is. However, both for political and practical reasons, it needs to be explained further.', '2013-07-25 08:52:35', '2013-07-25 08:52:35')[0m
+  [1m[35m (5.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "blogs"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "blogs" ("id", "title", "content", "created_at", "updated_at") VALUES (1, 'Linux', 'Linux is an operating system that evolved from a kernel created by Linus Torvalds when he was a student at the University of Helsinki. Generally, it is obvious to most people what Linux is. However, both for political and practical reasons, it needs to be explained further.', '2013-07-25 08:53:10', '2013-07-25 08:53:10')[0m
+  [1m[35m (5.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+=======
   [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.0ms)[0m  commit transaction
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
@@ -1196,3 +1670,4 @@ Processing by TopController#login as HTML
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+>>>>>>> 9143662a37603488209dbe53ca057aa5587c6768

@@ -1,6 +1,1777 @@
 Connecting to database specified by database.yml
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2013-07-25 10:27:59 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (4.8ms)
+Compiled blogs.css  (73ms)  (pid 781)
+Compiled style.css  (0ms)  (pid 781)
+Compiled top.css  (1ms)  (pid 781)
+Compiled users.css  (1ms)  (pid 781)
+Compiled application.css  (96ms)  (pid 781)
+Compiled jquery.js  (3ms)  (pid 781)
+Compiled jquery_ujs.js  (0ms)  (pid 781)
+Compiled blogs.js  (131ms)  (pid 781)
+Compiled top.js  (67ms)  (pid 781)
+Compiled users.js  (79ms)  (pid 781)
+Compiled application.js  (328ms)  (pid 781)
+  Rendered layouts/_menu.html.erb (0.7ms)
+  [1m[36mUsers Load (2.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (18.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 558ms (Views: 554.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /application.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /style.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /top.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /blogs.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /blogs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /top.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/background.png" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /background.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/footer.png" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /footer.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/anoceanofsky.jpg" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /anoceanofsky.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/assets/content_back.png" for 127.0.0.1 at 2013-07-25 10:28:00 +0700
+Served asset /content_back.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tab.png" for 127.0.0.1 at 2013-07-25 10:28:03 +0700
+Served asset /tab.png - 304 Not Modified (3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (1.5ms)
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /remove.png - 304 Not Modified (12ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /select.png - 304 Not Modified (41ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /add.png - 304 Not Modified (3ms)
+
+
+Started GET "/assets/botleft.png" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /botleft.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/right.png" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /right.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/left.png" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /left.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/botright.png" for 127.0.0.1 at 2013-07-25 10:28:04 +0700
+Served asset /botright.png - 304 Not Modified (4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 10:28:05 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:38 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:39 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Processing by BlogsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "blogs" 
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered blogs/_blogItem.html.erb (41.2ms)
+  Rendered blogs/index.html.erb within layouts/application (54.0ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 88ms (Views: 85.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:43 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs/edit/6" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered blogs/edit.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:46 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Processing by UsersController#new as HTML
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 10:38:53 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:45 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Processing by BlogsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "blogs" 
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered blogs/_blogItem.html.erb (2.6ms)
+  Rendered blogs/index.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:47 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs/edit/4" for 127.0.0.1 at 2013-07-25 11:21:52 +0700
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mBlog Load (0.1ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered blogs/edit.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:21:53 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Processing by BlogsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "blogs" 
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered blogs/_blogItem.html.erb (2.9ms)
+  Rendered blogs/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:13 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/top/index" for 127.0.0.1 at 2013-07-25 11:27:28 +0700
+Processing by TopController#index as HTML
+  Rendered top/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 48.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:28 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:28 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:28 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:28 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:28 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:29 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:29 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:29 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:29 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:29 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:29 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 11:27:30 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (1.7ms)
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 11:27:31 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/edit/34" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "34"]]
+  Rendered users/edit.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:35 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Processing by UsersController#index as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/_userList.html.erb (0.9ms)
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 11:27:39 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 11:27:43 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"sd"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%sd%')[0m
+  Rendered users/_userList.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/search" for 127.0.0.1 at 2013-07-25 11:27:43 +0700
+Processing by UsersController#search as HTML
+  Parameters: {"key"=>"sd"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username LIKE '%sd%')[0m
+  Rendered users/_userList.html.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Processing by UsersController#new as HTML
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:49 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Processing by BlogsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "blogs" [0m
+  [1m[35mBlog Load (0.3ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT 5 OFFSET 0
+  Rendered blogs/_blogItem.html.erb (3.5ms)
+  Rendered blogs/index.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:55 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:27:59 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/new" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Processing by UsersController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XM4L/Qi5xuDNR/L1tFgEIJMQ7cLY3wQsGk/xBwn6TB4=", "user"=>{"fullname"=>"", "username"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Save User"}
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUsers Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = '' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = '' LIMIT 1
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 23.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:03 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Processing by BlogsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "blogs" [0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT 5 OFFSET 0
+  Rendered blogs/_blogItem.html.erb (1.7ms)
+  Rendered blogs/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:35 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs/detail/6" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Processing by BlogsController#detail as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBlog Load (0.1ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", "6"]]
+  Rendered blogs/detail.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:28:37 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Processing by BlogsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "blogs" 
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered blogs/_blogItem.html.erb (1.9ms)
+  Rendered blogs/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:33 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Processing by BlogsController#new as HTML
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered blogs/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:29:35 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-07-25 11:30:11 +0700
+Processing by UsersController#index as HTML
+  [1m[36mUsers Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mUsers Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/_userList.html.erb (1.4ms)
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/remove.png" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /remove.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /add.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/select.png" for 127.0.0.1 at 2013-07-25 11:30:12 +0700
+Served asset /select.png - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Processing by UsersController#new as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered users/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:18 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Processing by BlogsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "blogs" 
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT 5 OFFSET 0[0m
+  Rendered blogs/_blogItem.html.erb (1.7ms)
+  Rendered blogs/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_menu.html.erb (0.2ms)
+  [1m[35mUsers Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:30:59 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs/detail/6" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Processing by BlogsController#detail as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mBlog Load (0.1ms)[0m  SELECT "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered blogs/detail.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:31:01 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Processing by BlogsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "blogs" [0m
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs" ORDER BY updated_at DESC LIMIT 5 OFFSET 0
+  Rendered blogs/_blogItem.html.erb (2.7ms)
+  Rendered blogs/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:36 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Processing by BlogsController#new as HTML
+  [1m[36mUsers Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered blogs/new.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_menu.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 33]]
+  Rendered layouts/_banner.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /blogs.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.css?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /top.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/top.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /top.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /blogs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-25 11:57:39 +0700
+Served asset /application.js - 304 Not Modified (0ms)
+=======
 Started GET "/" for 127.0.0.1 at 2013-07-25 13:07:17 +0700
 
 SyntaxError (/Users/vinhtt/RORR/ror/railsdoc/app/helpers/application_helper.rb:6: invalid multibyte char (US-ASCII)
@@ -4920,3 +6691,4 @@ Connecting to database specified by database.yml
   [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
   [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130722063446')
   [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130710080708')[0m
+>>>>>>> 9143662a37603488209dbe53ca057aa5587c6768
