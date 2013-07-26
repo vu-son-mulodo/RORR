@@ -1,4 +1,4 @@
-branch : master
+branch : factory_girl
 
 Solution :
 

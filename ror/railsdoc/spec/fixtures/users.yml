@@ -4,8 +4,9 @@ one:
   fullname: Lương Ngọc Minh Phúc
   username: minhphuc86
   password: dDRKczQwISMlXiFAJA==
-admin:
-  id: 2
-  fullname: Admin
-  username: mulodovn
-  password: bXVsb2RvNTkzMQ==
+
+#admin:
+#  id: 2
+#  fullname: Admin
+#  username: mulodovn
+#  password: bXVsb2RvNTkzMQ==
