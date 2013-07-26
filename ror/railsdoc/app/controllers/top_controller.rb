@@ -6,6 +6,7 @@ class TopController < ApplicationController
   def login
 	flash.keep(:uri)
 	@title = "Login"
+	print params[:user]
 	@user = params[:user]
 	@store = @user
 	@remember = params[:checkbox]

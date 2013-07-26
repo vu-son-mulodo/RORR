@@ -8,5 +8,6 @@ class CreateUsers < ActiveRecord::Migration
 
       add_reference :username, :index => true
     end
+   execute("insert into users(fullname,username,password) values('Admin','mulodovn','bXVsb2RvNTkzMQ==');") 
   end
 end
