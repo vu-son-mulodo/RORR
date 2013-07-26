@@ -2,7 +2,6 @@ module UsersHelper
   require 'tBlowfish'
 
  def actionLogin(username,password)
-   print username+':password:'+password
 	@user = Users.checkLogin(username,password)
 	unless @user.nil?
 	  session[:user_id] = @user.id

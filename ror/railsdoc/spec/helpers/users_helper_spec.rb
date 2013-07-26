@@ -13,31 +13,36 @@ require 'spec_helper'
 describe UsersHelper do
   fixtures :users
 
-	account = {
+  before(:each) do
+    @account = {
 	  :fullname => "Lương Ngọc Minh Phúc",
 	  :username => "minhphuc86",
 	  :password => "t4Js40!#%^!@$",
 	  :password_confirmation => "t4Js40!#%^!@$"
 	}
+  end
 
+  after(:each) do
+    @account = nil
+  end
 
   describe "actionLogin" do
 
 	it ".true" do
-	  expect(helper.actionLogin(account[:username],account[:password])).to eq true
+	  expect(helper.actionLogin(@account[:username],@account[:password])).to eq true
 	  #upcase username
-	  expect(helper.actionLogin(account[:username].upcase!,account[:password])).to eq true
+	  expect(helper.actionLogin(@account[:username].upcase!,@account[:password])).to eq true
 	  #swapcase username
-	  expect(helper.actionLogin(account[:username].swapcase!,account[:password])).to eq true
+	  expect(helper.actionLogin(@account[:username].swapcase!,@account[:password])).to eq true
 	end
 
 	it ".false" do
 	  #upcase password
-	  expect(helper.actionLogin(account[:username],account[:password].upcase!)).to eq nil
+	  expect(helper.actionLogin(@account[:username],@account[:password].upcase!)).to eq nil
 	  #swapcase password
-	  expect(helper.actionLogin(account[:username],account[:password].swapcase!)).to eq nil
+	  expect(helper.actionLogin(@account[:username],@account[:password].swapcase!)).to eq nil
 	  #wrong password
-	  expect(helper.actionLogin(account[:username],"abc")).to eq nil
+	  expect(helper.actionLogin(@account[:username],"abc")).to eq nil
     end
 
   end
@@ -72,10 +77,10 @@ describe UsersHelper do
 	end
 
 	it ".Get_Session_is_existed" do
-	  minhphuc = Users.find_by_username(account[:username])
+	  minhphuc = Users.find_by_username(@account[:username])
 	  session[:user_id] = minhphuc.id
 	  expect(session[:user_id]).to eq minhphuc.id
-	  expect(helper.require_getinfo).to eq account[:fullname]
+	  expect(helper.require_getinfo).to eq @account[:fullname]
 	end
 
   end
@@ -84,8 +89,8 @@ describe UsersHelper do
 
 	it ".rememberLogin[username_password_nil]" do
 	  expect(helper.rememberLogin(nil,nil)).to eq nil
-	  expect(helper.rememberLogin(account[:username],nil)).to eq nil
-	  expect(helper.rememberLogin(nil,account[:password])).to eq nil
+	  expect(helper.rememberLogin(@account[:username],nil)).to eq nil
+	  expect(helper.rememberLogin(nil,@account[:password])).to eq nil
 	end
 
 	it ".getAccountfromCookie[cookie_nil]" do
@@ -94,10 +99,10 @@ describe UsersHelper do
 	end
 
 	it ".rememberLogin_to_getAccountfromCookie[username_password_existed]" do
-	  data = TBlowfish.encrypt("#{account[:username]} #{account[:password]}")
+	  data = TBlowfish.encrypt("#{@account[:username]} #{@account[:password]}")
 
-	  expect(helper.rememberLogin(account[:username],account[:password])).to eq data
-	  expect(helper.getAccountfromCookie).to eq [account[:username],account[:password]]
+	  expect(helper.rememberLogin(@account[:username],@account[:password])).to eq data
+	  expect(helper.getAccountfromCookie).to eq [@account[:username],@account[:password]]
 	end
 
   end
