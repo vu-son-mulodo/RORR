@@ -1,1 +1,85 @@
 branch : master
+
+Solution :
+
+1. Configure Git in MACOS :
+  git config --global user.name "your username sign in on git"
+  git config --global user.email "your email sign in on git"
+
+  git clone uri foldername
+
+  Ex :
+	  git config --global user.name "luongphuc"
+	  git config --global user.email "luong.phuc@mulodo.com"
+
+	  git clone git@github.com:luong-phuc-mulodo/RORR.git ROR
+
+
+2. Upload Code after finish :
+
+	  Step 1 : view status modify
+		git status -s
+
+	  Step 2 : add or rm file if true
+		git add source
+		git rm source
+
+	  Step 2 : commit finish code
+		Commit all :
+		  git commit -am "message"
+		Commit selected file :
+		  git commit sourcefile -m "message"
+
+	  Step 3 : merge data from server git and file commit
+		git pull origin master
+		(if you get conflit, please view 3. Resolved Conflit )
+
+	  Step 4 : push data to server git
+		git push origin master
+
+  Ex :
+	git status -s
+	git add ../../source/newfile.txt
+	git rm delfile.txt
+	git commit -am "update source"
+	git pull origin master
+	git push origin master
+
+3. Resolved Conflit :
+	When you pull data from server if you get conflit, follow this way :
+
+	Step 1 : View status file change
+		git status -s
+
+	Step 2 : View change
+	  View all are changed
+		git diff
+	  View file is changed
+		git diff source
+
+	Step 3 : Edit file prefer with your require
+
+	Step 4 : Commit code
+		git commit -am "Update"
+
+	Step 5 : Update to server
+		git push origin master
+
+4. Revert Code :
+  git checkout filerevert
+
+  Ex :
+	  git checkout README.md
+
+5. Create Branch and use Branch
+	Step 1 : create and join to new branch
+	  git checkout -b branchname
+
+	Step 2 : When you change file in branch, remember to commit (save) before change branch
+
+	Step 3 : switch branch
+	  git checkout switchbranch
+
+	Step 4 : merge branch ( copy from otherbranch to currentbranch)
+	  git checkout currentbranch
+	  git merge otherbranch
