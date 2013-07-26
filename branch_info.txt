@@ -8,6 +8,11 @@ Solution :
 
   git clone uri foldername
 
+  (change remote server)
+  git remote rm origin git@github.com:project/direct
+  git remote add origin git@github.com:project/direct
+
+
   Ex :
 	  git config --global user.name "luongphuc"
 	  git config --global user.email "luong.phuc@mulodo.com"
