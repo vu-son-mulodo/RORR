@@ -3,26 +3,23 @@ require "spec_helper"
 describe Users do
   fixtures :users
 
-  before(:each) do
+  before(:all) do
     @account = {
 	  :fullname => "Lương Ngọc Minh Phúc",
 	  :username => "minhphuc86",
 	  :password => "t4Js40!#%^!@$",
 	  :password_confirmation => "t4Js40!#%^!@$"
 	}
-
-    @minhphuc = Users.find_by_username(@account[:username])
   end
 
-  after(:each) do
-	@minhphuc = nil
-    @account = nil
+
+  after(:all) do
+	Users.delete_all
   end
 
   context :check_login do
 	it ".Check_login" do
-
-	  expect(Users.checkLogin(@account[:username],@account[:password])).to eq @minhphuc
+	  @minhphuc = Users.find_by_username(@account[:username])
 	  expect(Users.checkLogin(@account[:username],@account[:password])).to eq @minhphuc
 	  expect(Users.checkLogin(@account[:username].upcase!,@account[:password])).to eq @minhphuc
 	  expect(Users.checkLogin(@account[:username].swapcase!,@account[:password])).to eq @minhphuc
@@ -65,9 +62,9 @@ describe Users do
 	end
 
 	it ".validate_record_create" do
-	  expect(Users).to have(2).records
+	  expect(Users).to have(1).records
 	  Users.create!(:fullname => "Lê Minh Hoàng", :username => "le.hoang", :password => "123123123", :password_confirmation => "123123123")
-	  expect(Users).to have(3).record
+	  expect(Users).to have(2).record
 	  expect(Users.where(:fullname => "Lê Minh Hoàng")).to have(1).record
 	  expect(Users.where(:username => "le.hoang")).to have(1).record
 	end
