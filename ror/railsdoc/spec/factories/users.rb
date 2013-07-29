@@ -19,6 +19,7 @@ FactoryGirl.define do
 	password "t4Js40!#%^!@$"
 	password_confirmation "t4Js40!#%^!@$"
   end
+
   factory :admin, class: Users do |u|
     u.fullname 'Admin Mulodo'
     u.username 'mulodovn'
