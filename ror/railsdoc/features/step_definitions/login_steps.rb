@@ -1,6 +1,6 @@
 @user =nil
 Given(/^I visit "(.*?)" page$/) do |arg1|
-  @user = FactoryGirl.create(:userss)
+  @user = FactoryGirl.create(:admin)
   visit arg1
 end
 
