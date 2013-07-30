@@ -20,4 +20,10 @@ FactoryGirl.define do
 	password_confirmation "t4Js40!#%^!@$"
   end
 
+  factory :admin, class: Users do |u|
+    u.fullname 'Admin Mulodo'
+    u.username 'mulodovn'
+    u.password 'mulodo5931'
+    u.password_confirmation 'mulodo5931'
+  end
 end
