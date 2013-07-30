@@ -5,12 +5,12 @@ describe Blog do
 
   context :validate do
 
-	it ".validate_nil" do
+	it "validate_nil" do
 	  expect(Blog.create).to have(1).error_on(:title, :context => :create)
 	  expect(Blog.create).to have(1).error_on(:content, :context => :create)
 	end
 
-	it ".validate_max(255)" do
+	it "validate_max(255)" do
 	  expect(Blog.create(:title => "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcccccc")).to have(1).error_on(:title, :context => :create)
 	end
 

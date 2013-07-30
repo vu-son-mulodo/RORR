@@ -30,9 +30,9 @@ describe BlogsHelper do
     end
   end
 
-  describe "require_getinfo" do
+  describe "#require_getinfo" do
 
-    it ".No_Session" do
+    it "No_Session" do
       session[:user_id] = nil
       expect(session[:user_id]).to eq nil
       expect(helper.require_getinfo).to eq false

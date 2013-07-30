@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe Users do
+describe ".Users" do
   fixtures :users
 
   before(:all) do
@@ -14,10 +14,11 @@ describe Users do
 
 
   after(:all) do
+	@account = nil
 	Users.delete_all
   end
 
-  context :check_login do
+  describe :check_login do
 	it ".Check_login" do
 	  @minhphuc = Users.find_by_username(@account[:username])
 	  expect(Users.checkLogin(@account[:username],@account[:password])).to eq @minhphuc
@@ -31,7 +32,7 @@ describe Users do
 	end
   end
 
-  context :create do
+  describe :create do
 
 	it ".validation_create_nil" do
 	  expect(Users.create).to have(2).error_on(:fullname, :context => :create)
@@ -71,7 +72,7 @@ describe Users do
 
   end
 
-  context :update do
+  describe :update do
 
 	it ".validation_nil" do
 	  expect(Users.update(1,:fullname => "")).to have(2).error_on(:fullname, :context => :update)
@@ -83,16 +84,6 @@ describe Users do
 	it ".validate_minimum" do
 	  expect(Users.update(1,:fullname => "abc")).to have(1).error_on(:fullname, :context => :update)
 	  expect(Users.update(1,:username => "abc")).to have(1).error_on(:username, :context => :update)
-	  expect(Users.update(1,:password => "abc")).to have(0).error_on(:password, :context => :update)
-	  expect(Users.update(1,:password_confirmation => "abc")).to have(0).error_on(:password_confirmation, :context => :update)
-	end
-
-	it ".validate_password" do
-	  expect(Users.update(1,{:password => "123456",:password_confirmation => "321321"})).to have(0).error_on(:password, :context => :update)
-	  expect(Users.update(1,{:password => "123",:password_confirmation => "321321"})).to have(0).error_on(:password, :context => :update)
-	  expect(Users.update(1,{:password => "112323",:password_confirmation => "3213"})).to have(0).error_on(:password, :context => :update)
-	  expect(Users.update(1,{:password => "112",:password_confirmation => "321"})).to have(0).error_on(:password, :context => :update)
-	  expect(Users.update(1,{:password => "123456",:password_confirmation => "123456"})).to have(0).error_on(:password, :context => :update)
 	end
 
 	it ".validate_record_update" do

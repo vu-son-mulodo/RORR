@@ -9,15 +9,12 @@ class TBlowfish
   end
 
   def self.encrypt(data)
-	return Base64.encode64(data).sub("\n","")
+	#return Base64.encode64(data).sub("\n","")
+	return Digest::MD5.hexdigest(data)
   end
 
   def self.decrypt(data)
-	return Base64.decode64(data)
-  end
-
-  def initialize(key = nil)
-	require "base64"
+	return nil
   end
 
 end

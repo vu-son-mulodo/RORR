@@ -10,25 +10,20 @@ require 'spec_helper'
 #     end
 #   end
 # end
-describe UsersHelper do
-  fixtures :users
+describe ".UsersHelper" do
 
-  before(:each) do
-    @account = {
-	  :fullname => "Lương Ngọc Minh Phúc",
-	  :username => "minhphuc86",
-	  :password => "t4Js40!#%^!@$",
-	  :password_confirmation => "t4Js40!#%^!@$"
-	}
+  before(:all) do
+	@minhphuc = FactoryGirl.create(:tranvinh)
+	@account = FactoryGirl.build(:tranvinh)
   end
 
-  after(:each) do
-    @account = nil
+  after(:all) do
+	Users.delete_all
   end
 
-  describe "actionLogin" do
+  describe "#actionLogin" do
 
-	it ".true" do
+	it "true" do
 	  expect(helper.actionLogin(@account[:username],@account[:password])).to eq true
 	  #upcase username
 	  expect(helper.actionLogin(@account[:username].upcase!,@account[:password])).to eq true
@@ -36,7 +31,7 @@ describe UsersHelper do
 	  expect(helper.actionLogin(@account[:username].swapcase!,@account[:password])).to eq true
 	end
 
-	it ".false" do
+	it "false" do
 	  #upcase password
 	  expect(helper.actionLogin(@account[:username],@account[:password].upcase!)).to eq nil
 	  #swapcase password
@@ -47,13 +42,13 @@ describe UsersHelper do
 
   end
 
-  describe "actionLogout" do
-	it ".No_Session" do
+  describe "#actionLogout" do
+	it "No_Session" do
 	  expect(helper.actionLogout).to eq true
 	  expect(session[:user_id]).to eq nil
 	end
 
-	it ".Get_Session" do
+	it "Get_Session" do
 	  session[:user_id] = "abc"
 	  expect(session[:user_id]).to eq "abc"
 	  expect(helper.actionLogout).to eq true
@@ -62,21 +57,21 @@ describe UsersHelper do
 
   end
 
-  describe "require_getinfo" do
+  describe "#require_getinfo" do
 
-	it ".No_Session" do
+	it "No_Session" do
 	  session[:user_id] = nil
 	  expect(session[:user_id]).to eq nil
 	  expect(helper.require_getinfo).to eq false
 	end
 
-	it ".Get_Session_is_deleted" do
+	it "Get_Session_is_deleted" do
 	  session[:user_id] = "abc"
 	  expect(session[:user_id]).to eq "abc"
 	  expect(helper.require_getinfo).to eq false
 	end
 
-	it ".Get_Session_is_existed" do
+	it "Get_Session_is_existed" do
 	  minhphuc = Users.find_by_username(@account[:username])
 	  session[:user_id] = minhphuc.id
 	  expect(session[:user_id]).to eq minhphuc.id
@@ -85,20 +80,20 @@ describe UsersHelper do
 
   end
 
-  describe "rememberLogin_getAccountfromCookie" do
+  describe "#rememberLogin_#getAccountfromCookie" do
 
-	it ".rememberLogin[username_password_nil]" do
+	it "rememberLogin[username_password_nil]" do
 	  expect(helper.rememberLogin(nil,nil)).to eq nil
 	  expect(helper.rememberLogin(@account[:username],nil)).to eq nil
 	  expect(helper.rememberLogin(nil,@account[:password])).to eq nil
 	end
 
-	it ".getAccountfromCookie[cookie_nil]" do
+	it "getAccountfromCookie[cookie_nil]" do
 	  cookies[:mem]
 	  expect(helper.getAccountfromCookie).to eq false
 	end
 
-	it ".rememberLogin_to_getAccountfromCookie[username_password_existed]" do
+	it "rememberLogin_to_getAccountfromCookie[username_password_existed]" do
 	  data = TBlowfish.encrypt("#{@account[:username]} #{@account[:password]}")
 
 	  expect(helper.rememberLogin(@account[:username],@account[:password])).to eq data
