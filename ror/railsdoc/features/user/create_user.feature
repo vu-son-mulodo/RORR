@@ -1,6 +1,5 @@
+@javascript
 Feature: Create users
-
-
 Background:
 	 Given I visit "/login" page
 		  When I enter "mulodovn" in the "user_username" field
@@ -16,9 +15,3 @@ Background:
 		And I enter "123456" in the "user_password_confirmation" field
        Then I click "Save User" button
       Then I see "mulodovn1" was add
-      
-      
-      
-      
-
-   
