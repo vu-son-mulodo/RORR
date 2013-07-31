@@ -1,6 +1,5 @@
+@javascript
 Feature: Update Blog
-
-
 Background:
 	 Given I visit "/login" page
 		  When I enter "mulodovn" in the "user_username" field
