@@ -25,10 +25,16 @@ Background:
       When I enter "" in the "blog_title" field
 		And I enter "Phuc Tung3" in the "blog_content" field
         Then I click "Save Blog" button
-      Then I see "can't be blank\"
+      Then I see "can't be blank"
+
+	  Given I visit "/blogs/new"
+      When I enter "title" in the "blog_title" field
+		And I enter "" in the "blog_content" field
+        Then I click "Save Blog" button
+      Then I see "can't be blank"
 
 	  Given I visit "/blogs/new"
       When I enter "" in the "blog_title" field
 		And I enter "" in the "blog_content" field
         Then I click "Save Blog" button
-      Then I see "can't be blank\"
+      Then I see "can't be blank"
