@@ -68,4 +68,16 @@ class BlogsController < ApplicationController
 
   end
 
+  def del
+
+	if checkLogin
+	  @blog = Blog.find_by_id(params[:id])
+	  unless @blog.nil?
+		@blog.destroy
+		redirect_to "/blogs"
+	  end
+	end
+
+  end
+
 end

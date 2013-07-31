@@ -41,6 +41,7 @@ module UsersHelper
 		redirect_to @uri
 	  else
 		redirect_to "/login"
+		return false
 	  end
 
 	else
@@ -50,6 +51,7 @@ module UsersHelper
 		userinfo = Users.find(session[:user_id])
 	  rescue ActiveRecord::RecordNotFound => e
 		redirect_to "/login"
+		return false
 	  end
 
 	end

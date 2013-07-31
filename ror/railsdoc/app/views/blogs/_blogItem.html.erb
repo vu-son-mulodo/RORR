@@ -2,7 +2,8 @@
     <h2 class="title"><%= link_to blogItem.title, "/blogs/detail/#{blogItem.id}" %></h2>
     <p class="meta">
         <span class="date">created : <%=Fdate.string2Datez(blogItem.created_at)%></span> ||
-        <span><%= link_to "Edit", "/blogs/edit/#{blogItem.id}" %></span>
+        <span><%= link_to "Edit", "/blogs/edit/#{blogItem.id}" %></span> ||
+        <span><%= link_to "Del", "/blogs/del/#{blogItem.id}" %></span>
         <span class="posted">Posted by <%= link_to 'Someone', "/blogs/detail/#{blogItem.id}" %></span>
     </p>
     <div style="clear: both;">&nbsp;</div>

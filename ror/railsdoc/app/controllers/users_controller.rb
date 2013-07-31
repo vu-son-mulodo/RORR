@@ -56,9 +56,11 @@ class UsersController < ApplicationController
   def del
 
 	if checkLogin
-	  @user = Users.find(params[:id])
-	  @user.destroy
-	  redirect_to "/users"
+	  @user = Users.find_by_id(params[:id])
+	  unless @user.nil?
+		@user.destroy
+		redirect_to "/users"
+	  end
 	end
 
   end
