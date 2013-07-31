@@ -11,4 +11,6 @@ end
 Given(/^I visit "(.*?)blog"$/) do |arg1|
   visit arg1
 end
-
+Then(/^I see "(.*?)"$/) do |arg1|
+  puts "can't be blank"
+end
