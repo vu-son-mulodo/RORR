@@ -7,7 +7,7 @@
     </p>
     <div style="clear: both;">&nbsp;</div>
     <div class="entry">
-        <p><%=blogItem.content %></p>
+        <p><%=raw(blogItem.content) %></p>
         <p class="links">
           <%= link_to '(Read More)', "/blogs/detail/#{blogItem.id}" %>
           <span class="comments">Modified : <%=Fdate.string2Datez(blogItem.updated_at) %></span>
