@@ -76,3 +76,4 @@ puts "\n\n ~~~~~~~~List student :~~~~~~~~~~~ \n"
 StudentList.each {|id,studentItem|
 	studentItem.test
 }
+

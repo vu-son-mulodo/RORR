@@ -26,7 +26,7 @@ module UsersHelper
   @uri = "/top"
   return true
  end
-
+#----------------------
   def checkLogin
 	flash[:uri] = request.original_url
 
@@ -58,7 +58,7 @@ module UsersHelper
 
 	return true
   end
-
+#----------------------
   def require_getinfo
 
 	unless session[:user_id].nil?
