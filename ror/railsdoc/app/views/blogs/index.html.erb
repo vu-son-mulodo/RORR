@@ -1,9 +1,17 @@
 <%= link_to 'New Blog', "/blogs/new" %>
+
+<p>
+  <%= text_field_tag :search %>
+  <%= button_tag "Search", :id => 'btnSearch',:type => 'button' %>
+</p>
+
 <div class="apple_pagination">
   <%= will_paginate @blogsList %>
 </div>
+<div id="result">
+  <%= render :partial => "blogItem", :collection => @blogsList %>
+</div>
 
-<%= render :partial => "blogItem", :collection => @blogsList %>
 <br/>
 <div class="apple_pagination">
   <%= will_paginate @blogsList %>
