@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+include BlogsHelper
 
   def index
     #checkLogin
@@ -77,6 +78,13 @@ class BlogsController < ApplicationController
 		redirect_to "/blogs"
 	  end
 	end
+
+  end
+
+  def search
+
+    @blogs = hpsearch(params[:search])
+    render :partial => "blogItem", :collection => @blogs
 
   end
 
