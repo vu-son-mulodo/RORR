@@ -10,4 +10,16 @@ module BlogsHelper
   def nameHelperDefault
     "RSpec is your friend"
   end
+
+  def hpsearch(key)
+
+    unless key.nil?
+      @blogs = Blog.find(:all, :conditions => ["title LIKE ?","%" << key << "%"])
+    else
+      @blogs = Blog.all
+    end
+
+    return @blogs
+  end
+
 end
