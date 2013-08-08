@@ -5,7 +5,7 @@
 		Create by Luong.Phuc@mulodo.com
 	  </div>
 	  <% if (require_getinfo != false) %>
-		<div class="topNaviagationLink_right">Wellcome <%= require_getinfo %> (<%= link_to 'Logout', "/logout" %>)</div>
+		<div class="topNaviagationLink_right">Wellcome <%= require_getinfo %> (<%= link_to 'Logout', uri("/logout") %>)</div>
 	  <% end %>
   </div>
 </div>

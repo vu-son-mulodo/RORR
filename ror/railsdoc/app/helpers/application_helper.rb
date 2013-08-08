@@ -13,3 +13,7 @@ module ApplicationHelper
   end
 
 end
+
+def uri(url)
+  return "#{$base_uri}#{url}"
+end

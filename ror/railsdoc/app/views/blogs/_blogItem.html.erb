@@ -1,16 +1,16 @@
 <div class="post">
-    <h2 class="title"><%= link_to blogItem.title, "/blogs/detail/#{blogItem.id}" %></h2>
+    <h2 class="title"><%= link_to blogItem.title, uri("/blogs/detail/#{blogItem.id}") %></h2>
     <p class="meta">
         <span class="date">created : <%=Fdate.string2Datez(blogItem.created_at)%></span> ||
-        <span><%= link_to "Edit", "/blogs/edit/#{blogItem.id}" %></span> ||
-        <span><%= link_to "Del", "/blogs/del/#{blogItem.id}" %></span>
-        <span class="posted">Posted by <%= link_to 'Someone', "/blogs/detail/#{blogItem.id}" %></span>
+        <span><%= link_to "Edit", uri("/blogs/edit/#{blogItem.id}") %></span> ||
+        <span><%= link_to "Del", uri("/blogs/del/#{blogItem.id}") %></span>
+        <span class="posted">Posted by <%= link_to 'Someone', uri("/blogs/detail/#{blogItem.id}") %></span>
     </p>
     <div style="clear: both;">&nbsp;</div>
     <div class="entry">
         <p><%=raw(blogItem.content) %></p>
         <p class="links">
-          <%= link_to '(Read More)', "/blogs/detail/#{blogItem.id}" %>
+          <%= link_to '(Read More)', uri("/blogs/detail/#{blogItem.id}") %>
           <span class="comments">Modified : <%=Fdate.string2Datez(blogItem.updated_at) %></span>
         </p>
     </div>

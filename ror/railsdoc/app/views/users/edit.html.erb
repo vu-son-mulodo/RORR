@@ -1,5 +1,5 @@
 <br />
-<%= form_for :user, :url => "/users/edit/#{@user.id}" do |f| %>
+<%= form_for :user, :url => uri("/users/edit/#{@user.id}") do |f| %>
 
 <% if @error != nil %>
 <% @error.each do |label,val| %>
@@ -30,4 +30,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', "/users" %>
+<%= link_to 'Back', uri("/users") %>

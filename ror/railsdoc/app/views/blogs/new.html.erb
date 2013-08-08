@@ -1,6 +1,6 @@
 
 <br />
-<%= form_for :blog, :url => "/blogs/new" do |f| %>
+<%= form_for :blog, :url => uri("/blogs/new") do |f| %>
 
 <% if @error != nil
   lb = nil
@@ -32,4 +32,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', "/blogs" %>
+<%= link_to 'Back', uri("/blogs") %>

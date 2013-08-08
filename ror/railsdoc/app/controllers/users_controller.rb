@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 		@user = Users.new(params[:user])
 		@error = @createUser.errors
 	  else
-		redirect_to "/users"
+		redirect_to uri("/users")
 	  end
 
 	end
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 		unless @updateUser.valid?
 		  @error = @updateUser.errors
 		else
-		  redirect_to "/users"
+		  redirect_to uri("/users")
 		end
 
 	  end
@@ -59,7 +59,7 @@ class UsersController < ApplicationController
 	  @user = Users.find_by_id(params[:id])
 	  unless @user.nil?
 		@user.destroy
-		redirect_to "/users"
+		redirect_to uri("/users")
 	  end
 	end
 

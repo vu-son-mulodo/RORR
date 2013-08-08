@@ -22,7 +22,7 @@ include BlogsHelper
           @blog = Blog.new(params[:blog])
           @error = @createBlog.errors
         else
-          redirect_to "/blogs"
+          redirect_to uri("/blogs")
         end
 
       end
@@ -48,7 +48,7 @@ include BlogsHelper
 		unless @updateBlog.valid?
 		  @error = @updateBlog.errors
 		else
-		  redirect_to "/blogs"
+		  redirect_to uri("/blogs")
 		end
 
 	  end
@@ -75,7 +75,7 @@ include BlogsHelper
 	  @blog = Blog.find_by_id(params[:id])
 	  unless @blog.nil?
 		@blog.destroy
-		redirect_to "/blogs"
+		redirect_to ("/blogs")
 	  end
 	end
 

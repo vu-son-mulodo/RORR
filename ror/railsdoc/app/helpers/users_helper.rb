@@ -7,7 +7,7 @@ module UsersHelper
 	  session[:user_id] = @user.id
 
 	  if flash[:uri].nil?
-		@uri = "/users"
+		@uri = uri("/users")
 	  else
 		@uri = flash[:uri]
 	  end
@@ -23,12 +23,12 @@ module UsersHelper
  def actionLogout
   session[:user_id] = nil
   cookies.delete(:mem)
-  @uri = "/top"
+  @uri = uri("/top")
   return true
  end
 #----------------------
   def checkLogin
-	flash[:uri] = request.original_url
+	flash[:uri] = uri(request.fullpath) #request.original_url
 
 	if session[:user_id].nil?
 	  @cookie = getAccountfromCookie()
@@ -40,7 +40,7 @@ module UsersHelper
 	  unless @uri.nil?
 		redirect_to @uri
 	  else
-		redirect_to "/login"
+		redirect_to uri("/login")
 		return false
 	  end
 
@@ -50,7 +50,7 @@ module UsersHelper
 	  begin
 		userinfo = Users.find(session[:user_id])
 	  rescue ActiveRecord::RecordNotFound => e
-		redirect_to "/login"
+		redirect_to uri("/login")
 		return false
 	  end
 
