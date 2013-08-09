@@ -6,7 +6,7 @@
 </p>
 
 <div class="apple_pagination">
-  <%= will_paginate @blogsList %>
+  <%= will_paginate(@blogsList,{:params => {:controller => "rails/blogs"}}) %>
 </div>
 <div id="result">
   <%= render :partial => "blogItem", :collection => @blogsList %>
@@ -14,7 +14,8 @@
 
 <br/>
 <div class="apple_pagination">
-  <%= will_paginate @blogsList %>
+  <%= will_paginate(@blogsList,{:params => {:controller => "rails/blogs"}}) %>
 </div>
 <br/>
 <%= link_to 'New Blog', uri("/blogs/new") %>
+
