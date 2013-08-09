@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require ckeditor/init
 //= require_tree .
+var base_url = "/rails"
