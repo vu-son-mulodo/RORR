@@ -23,7 +23,7 @@ class Users < ActiveRecord::Base
 	self.password = TBlowfish.encrypt(self.password)
 	self.password_confirmation = TBlowfish.encrypt(self.password_confirmation)
 	#puts self.password
-	#puts self.password_confirmation
+	puts self.password_confirmation
   end
 
   def self.checkLogin(username,password)
