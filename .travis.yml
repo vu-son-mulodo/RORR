@@ -9,4 +9,8 @@ script:
   - bundle install
   - rake db:migrate
   - rake db:test:load
-  - bundle exec rspec spec
+  - bundle exec rspec ./spec/helpers/users_helper_spec.rb
+  - bundle exec rspec ./spec/models/user_spec.rb
+  - bundle exec rspec ./spec/models/users_spec.rb
+  - bundle exec rspec ./spec/helpers/blogs_helper_spec.rb
+  - bundle exec rspec ./spec/models/blog_spec.rb 
