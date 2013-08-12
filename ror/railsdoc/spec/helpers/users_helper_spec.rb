@@ -79,7 +79,7 @@ describe ".UsersHelper" do
 	end
 
   end
-
+=begin
   describe "#rememberLogin_#getAccountfromCookie" do
 
 	it "rememberLogin[username_password_nil]" do
@@ -101,5 +101,5 @@ describe ".UsersHelper" do
 	end
 
   end
-
+=end
 end

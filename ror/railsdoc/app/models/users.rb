@@ -21,6 +21,9 @@ class Users < ActiveRecord::Base
   def encrypt_password
 	self.username.downcase!
 	self.password = TBlowfish.encrypt(self.password)
+	self.password_confirmation = TBlowfish.encrypt(self.password_confirmation)
+	#puts self.password
+	#puts self.password_confirmation
   end
 
   def self.checkLogin(username,password)
