@@ -5,6 +5,7 @@ env:
   - DB=sqlite
 script:
   - cd ror/railsdoc
+  - bundle install
   - rake db:migrate
   - rake db:test:load
   - bundle exec rspec spec
