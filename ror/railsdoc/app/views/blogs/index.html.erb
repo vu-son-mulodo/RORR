@@ -1,21 +1,25 @@
 <%= link_to 'New Blog', uri("/blogs/new") %>
 
-<p>
+<div class="search">
   <%= text_field_tag :search %>
   <%= button_tag "Search", :id => 'btnSearch',:type => 'button' %>
-</p>
-
-<div class="apple_pagination">
-  <%= will_paginate(@blogsList,{:params => {:controller => "rails/blogs"}}) %>
 </div>
+
 <div id="result">
-  <%= render :partial => "blogItem", :collection => @blogsList %>
-</div>
 
-<br/>
-<div class="apple_pagination">
-  <%= will_paginate(@blogsList,{:params => {:controller => "rails/blogs"}}) %>
+  <div class="apple_pagination">
+    <%= will_paginate(@blogsList,{:params => {:controller => "rails/blogs"}}) %>
+  </div>
+  <div id="content">
+    <%= render :partial => "blogItem", :collection => @blogsList %>
+  </div>
+
+  <br/>
+  <div class="apple_pagination">
+    <%= will_paginate(@blogsList,{:params => {:controller => "rails/blogs"}}) %>
+  </div>
+  <br/>
+
 </div>
-<br/>
 <%= link_to 'New Blog', uri("/blogs/new") %>
 

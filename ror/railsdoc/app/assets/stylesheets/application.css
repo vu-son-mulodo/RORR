@@ -11,7 +11,8 @@
  *= require_self
  *= require_tree .
  */
-body {
+body
+{
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -20,11 +21,14 @@ body {
 	color: #061C37;
 	background: #014D5D url(background.png);
 	background-repeat:repeat-x;
+	line-height: 1.6em;
 }
+
 *
 {
   margin: 0 auto 0 auto;
- text-align:left;}
+ text-align:left;
+}
 
 #page
 {

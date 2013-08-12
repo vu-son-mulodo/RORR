@@ -84,7 +84,11 @@ include BlogsHelper
   def search
 
     @blogs = hpsearch(params[:search])
-    render :partial => "blogItem", :collection => @blogs
+    if @blogs.length > 0
+	  render :partial => "blogItem", :collection => @blogs
+	else
+	  render :text => "Not Found"
+	end
 
   end
 

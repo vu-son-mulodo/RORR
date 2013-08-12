@@ -1,7 +1,7 @@
 Railsdoc::Application.routes.draw do
 
-  post "/login", :to => 'top#login', :as => 'users'
-  get "/login", :to => 'top#login', :as => 'users'
+  post "/login", :to => 'top#login'
+  get "/login", :to => 'top#login'
   get "/logout", :to => 'top#logout'
   get "/blogs/new", :to => 'blogs#new'
   get "/blogs/search", :to => 'blogs#search'
