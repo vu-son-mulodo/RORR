@@ -5,6 +5,7 @@ env:
   - DB=sqlite
 script:
   - cd ror/railsdoc
+  - gem install xpath -v '2.0.0'
   - bundle install
   - rake db:migrate
   - rake db:test:load
