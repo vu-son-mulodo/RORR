@@ -12,4 +12,7 @@ script:
   - bundle exec rspec ./spec/models/user_spec.rb
   - bundle exec rspec ./spec/models/users_spec.rb
   - bundle exec rspec ./spec/helpers/blogs_helper_spec.rb
-  - bundle exec rspec ./spec/models/blog_spec.rb 
+  - bundle exec rspec ./spec/models/blog_spec.rb
+before_install:
+  - gem update --system
+  - gem --version

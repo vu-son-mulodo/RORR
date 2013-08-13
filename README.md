@@ -15,3 +15,10 @@ Rspec :
 
 Cucumber :
   - Test
+
+
+Suport Use Mysql for Rails :
+
+Step 1 : brew install mysql
+Step 2 : gem install mysql2
+Step 3 : rails new projectName -d mysql
