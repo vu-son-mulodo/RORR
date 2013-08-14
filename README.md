@@ -22,3 +22,8 @@ Suport Use Mysql for Rails :
 Step 1 : brew install mysql
 Step 2 : gem install mysql2
 Step 3 : rails new projectName -d mysql
+
+
+View PId of Rails :
+Step 1 : lsof -wni tcp:3000
+Step 2 : kill -9 {PID}
