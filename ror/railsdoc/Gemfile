@@ -31,7 +31,7 @@ group :test do
 end
 
 gem 'jquery-rails'
-gem "ckeditor"
+gem "ckeditor_rails"
 
 gem 'strong_parameters'
 
