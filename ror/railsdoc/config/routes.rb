@@ -3,10 +3,10 @@ Railsdoc::Application.routes.draw do
   post "/login", :to => 'top#login'
   get "/login", :to => 'top#login'
   get "/logout", :to => 'top#logout'
-  get "/blogs/new", :to => 'blogs#new'
-  get "/blogs/search", :to => 'blogs#search'
-  post "/blogs/search", :to => 'blogs#search'
-  get "/blogs/(:page)", :to => 'blogs#index'
+  get "/blogs/new(.:1)", :to => 'blogs#new'
+  get "/blogs/search(.:1)", :to => 'blogs#search'
+  post "/blogs/search(.:1)", :to => 'blogs#search'
+  get "/blogs/(:page)(.:1)", :to => 'blogs#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
