@@ -14,7 +14,7 @@ class SatisfyNumber
     (min..max).each {|i|
       counts += 1 if value_array(convert_number_to_array(i)) == @require_number
       puts "#{i}=#{@require_number}" if value_array(convert_number_to_array(i)) == @require_number
-		}
+    }
     puts "count : #{counts}"
   end
 
