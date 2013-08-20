@@ -23,7 +23,7 @@ class Test3
 
   #Sum all number in array
   def sum(a)
-    return ((temp = a[0] + a[1]) > @num) ? temp%@num : temp if a.size === 2
+    return ((temp = a[0] + a[1]) > @num) ? temp % @num : temp if a.size === 2
     return a[0] if a.size === 1
     sum_with_size_than_2(a)
   end
