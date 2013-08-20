@@ -29,7 +29,7 @@ class Test3
   end
 
   def sum_with_size_than_2(a)
-    sum((0...(a.size/2 + a.size%2)).map{|x| a[x*2+1].nil? ? a[x*2] : (a[x*2]+a[x*2+1])%10 })
+    sum((0...(a.size/2).ceil).map{|x| a[x*2+1].nil? ? a[x*2] : (a[x*2]+a[x*2+1])%10 })
   end
 
   def run
