@@ -16,25 +16,13 @@ class SatisfyNumber
     return false if total != 10
   end
 
-  def get_thousand(number)
-    return (number/1000)
-  end
-
-  def get_hundred(number)
-    return (number % 1000)/100
-  end
-
-  def get_dozen(number)
-    return (((number % 1000) % 100) / 10)
-  end
-
-  def get_ni(number)
-    return (number % 10)
-  end
-
   def sum(number)
-    sum = ((get_thousand(number) + get_hundred(number)) % 10 ) + ((get_dozen(number) + get_ni(number)) % 10)
-    return sum
+    array = convert_number_to_array(number)
+    sum = ((array[0] + array[1]) % 10 ) + ((array[2] + array[3]) % 10)
+  end
+
+  def convert_number_to_array(number)
+    number.to_s.scan(/./).map {|e| e.to_i}
   end
 end
 

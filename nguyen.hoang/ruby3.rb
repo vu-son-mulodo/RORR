@@ -10,13 +10,9 @@ class SatisfyNumber
   end
 
   def run
-    counts = 0
-    (min..max).each {|i| counts += count_satisfy_number(i) }
-    puts "count : #{counts}"
-  end
-
-  def count_satisfy_number(i)
-    (value_array(convert_number_to_array(i))==@require_number) ? 1 : 0
+    array = (min..max).select {|i| value_array(convert_number_to_array(i)) == @require_number}
+    array.each{|i| puts "#{i}= #{@require_number}"}
+    puts "count : #{array.count}"
   end
 
   def convert_number_to_array(number)

@@ -27,13 +27,12 @@ class R1
   
   def convert_array (array)
     length = array.length
-    half = (length.to_f/2).ceil
-    sub_array = sub_array(half,array)
+    sub_array = sub_array((length.to_f/2).ceil,array)
     sub_array.length > 2 ? sum(sub_array) : sub_array
   end
   
   def sub_array(half,array)
-    (0...(array.length.to_f/2).ceil).map{|i|  half < 2? array[i*2].to_i + array[(i*2)+1].to_i : (array[i*2].to_i + array[(i*2)+1].to_i)%10}
+    (0...half).map{|i|  half < 2? array[i*2].to_i + array[(i*2)+1].to_i : (array[i*2].to_i + array[(i*2)+1].to_i)%10}
   end  
   
   def int_split(number)
