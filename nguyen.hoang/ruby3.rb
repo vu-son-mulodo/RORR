@@ -43,7 +43,7 @@ class SatisfyNumber
   end
 
   def convert_to_new_array(array)
-    (0...(array.size/2).ceil).map{|i| (array[i*2].to_i + array[(i*2)+1].to_i) % 10}
+    (0...(array.size.to_f/2).ceil).map{|i| (array[i*2].to_i + array[(i*2)+1].to_i) % 10}
   end
 end
 
