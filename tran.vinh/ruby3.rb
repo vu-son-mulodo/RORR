@@ -32,7 +32,7 @@ class R1
   end
   
   def sub_array(half,array)
-    (0...(array.length.to_f/2).ceil).map{|i|  half < 2? array[i*2].to_i + array[(i*2)+1].to_i : (array[i*2].to_i + array[(i*2)+1].to_i)%10}
+    (0...half).map{|i|  half < 2? array[i*2].to_i + array[(i*2)+1].to_i : (array[i*2].to_i + array[(i*2)+1].to_i)%10}
   end  
   
   def int_split(number)
