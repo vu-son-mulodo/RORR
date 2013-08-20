@@ -29,7 +29,7 @@ class Test3
   end
 
   def sum_with_size_than_2(a)
-    sum((0...(a.size/2).ceil).map{|x| a[x*2+1].nil? ? a[x*2] : (a[x*2]+a[x*2+1])%10 })
+    sum((0...(a.size.to_f/2).ceil).map{|x| a[x*2+1].nil? ? a[x*2] : (a[x*2]+a[x*2+1])%10 })
   end
 
   def run
@@ -41,7 +41,7 @@ end
 
 GlobalTest.min = 0
 GlobalTest.max = 18
-a = Test3.new(1000,9999)
+a = Test3.new(100,999)
 a.required_num = 10
 a.run
 a.list.each {|num| puts "#{num}=#{a.num}"}
