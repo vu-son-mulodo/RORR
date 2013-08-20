@@ -19,7 +19,6 @@ class SatisfyNumber
   def sum(number)
 		array = convert_number_to_array(number)
     sum = ((array[0] + array[1]) % 10 ) + ((array[2] + array[3]) % 10)
-    return sum
   end
 
   def convert_number_to_array(number)
