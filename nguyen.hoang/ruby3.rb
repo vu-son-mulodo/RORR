@@ -6,7 +6,7 @@ class SatisfyNumber
   end
 
   def required_num=(number)
-	@require_number = number
+    @require_number = number
   end
 
   def run
@@ -64,7 +64,7 @@ class SatisfyNumber
 
   def change_some_value_in_array(array, i)
     while i < array.size
-						array[i] = array[i] if i == array.size - 1
+      array[i] = array[i] if i == array.size - 1
       array[i] = (array[i] + array[i+1]) % 10 if i < array.size - 1
       i += 2
     end
