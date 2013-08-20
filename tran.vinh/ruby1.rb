@@ -5,7 +5,7 @@ end
 
 # This is an example, so you can change as you like
 class Sea
-  # a method to initalize
+  attr_accessor :x,:y
   def initialize(m, n)
     @x = m.to_i
     @y = n.to_i
@@ -13,7 +13,6 @@ class Sea
     set_islands_at_random
   end
 
-  # a method to set islands at random
   def set_islands_at_random 
       @array = Array.new(@y) { Array.new(@x) {create_island}}
   end
@@ -25,15 +24,9 @@ class Sea
   
   def print_array 
     return nil if @array.nil?
-      @array.each {|row|
-        row.each { |cell| print cell, "  " }
-        puts "\n"
-      }
+    @array.each {|row| puts row.map.join(' ')}
   end  
   
-  
-  # a method to return number of island
-  #array flatten covert array n-D to array 1D 
   def count_island
     all_island = []
     @array.flatten.each_with_index{|island,index|  all_island.push(index) if island == 1 }

@@ -1,6 +1,6 @@
 
 class R1
-  attr_accessor :required_num
+  attr_accessor :x,:y,:required_num
  
   def initialize(m, n)
     @x = m.to_i
