@@ -3,9 +3,9 @@ include BlogsHelper
 
   def index
     #checkLogin
-	@title = "Manager Blogs"
+    @title = "Manager Blogs"
 
-	@blogsList = Blog.paginate(:page => params[:page],:per_page => 5).order('updated_at DESC')
+    @blogsList = Blog.paginate(:page => params[:page],:per_page => 5).order('updated_at DESC')
   end
 
   def new
@@ -27,38 +27,38 @@ include BlogsHelper
 
       end
 
-	end
+    end
   end
 
   def edit
     if checkLogin
-	  @title = "Edit Blog"
+      @title = "Edit Blog"
 
-	  begin
-		@blog = Blog.find(params[:id])
-	  rescue ActiveRecord::RecordNotFound => e
-		render(:text => "Not found")
-	  end
+      begin
+        @blog = Blog.find(params[:id])
+      rescue ActiveRecord::RecordNotFound => e
+        render(:text => "Not found")
+      end
 
-	  @error = nil
+      @error = nil
 
-	  unless params[:blog].nil?
-		@updateBlog = Blog.update(params[:id],params.require(:blog).permit(:title,:content))
+      unless params[:blog].nil?
+        @updateBlog = Blog.update(params[:id],params.require(:blog).permit(:title,:content))
 
-		unless @updateBlog.valid?
-		  @error = @updateBlog.errors
-		else
-		  redirect_to uri("/blogs")
-		end
+        unless @updateBlog.valid?
+          @error = @updateBlog.errors
+        else
+          redirect_to uri("/blogs")
+        end
 
-	  end
+      end
 
-	end
+    end
   end
 
   def detail
 
-	begin
+    begin
       @blog = Blog.find(params[:id])
     rescue ActiveRecord::RecordNotFound => e
       render(:text => "Not found")

@@ -16,19 +16,7 @@ class SatisfyNumber
   end
 
   def count_satisfy_number(i)
-    counts = 0
-    array = convert_number_to_array(i)
-    value = value_array(array)
-    counts += 1 if is_satisfy_number?(i,value)
-    return counts
-  end
-
-  def is_satisfy_number?(i,value)
-    if value == @require_number
-      puts "#{i}=#{@require_number}"
-      return true
-    end
-    return false
+    (value_array(convert_number_to_array(i))==@require_number) ? 1 : 0
   end
 
   def convert_number_to_array(number)

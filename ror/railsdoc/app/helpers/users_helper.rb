@@ -2,21 +2,21 @@ module UsersHelper
   require 'tBlowfish'
 
  def actionLogin(username,password)
-	@user = Users.checkLogin(username,password)
-	unless @user.nil?
-	  session[:user_id] = @user.id
+    @user = Users.checkLogin(username,password)
+    unless @user.nil?
+      session[:user_id] = @user.id
 
-	  if flash[:uri].nil?
-		@uri = uri("/users")
-	  else
-		@uri = flash[:uri]
-	  end
-	  return true;
-	else
-	  @user = Users.new(:username => username)
-	  @error = "Username or Password wrong"
-	  return nil;
-	end
+      if flash[:uri].nil?
+        @uri = uri("/users")
+      else
+        @uri = flash[:uri]
+      end
+      return true;
+    else
+      @user = Users.new(:username => username)
+      @error = "Username or Password wrong"
+      return nil;
+    end
 
  end
 
@@ -28,76 +28,76 @@ module UsersHelper
  end
 #----------------------
   def checkLogin
-	flash[:uri] = uri(request.fullpath) #request.original_url
+    flash[:uri] = uri(request.fullpath) #request.original_url
 
-	if session[:user_id].nil?
-	  @cookie = getAccountfromCookie()
+    if session[:user_id].nil?
+      @cookie = getAccountfromCookie()
 
-	  if @cookie != false
-		actionLogin(@cookie[0],@cookie[1])
-	  end
+      if @cookie != false
+        actionLogin(@cookie[0],@cookie[1])
+      end
 
-	  unless @uri.nil?
-		redirect_to @uri
-	  else
-		redirect_to uri("/login")
-		return false
-	  end
+      unless @uri.nil?
+        redirect_to @uri
+      else
+        redirect_to uri("/login")
+        return false
+      end
 
-	else
+    else
 
-	  # find user by ID
-	  begin
-		userinfo = Users.find(session[:user_id])
-	  rescue ActiveRecord::RecordNotFound => e
-		redirect_to uri("/login")
-		return false
-	  end
+      # find user by ID
+      begin
+        userinfo = Users.find(session[:user_id])
+      rescue ActiveRecord::RecordNotFound => e
+        redirect_to uri("/login")
+        return false
+      end
 
-	end
+    end
 
-	return true
+    return true
   end
 #----------------------
   def require_getinfo
 
-	unless session[:user_id].nil?
+    unless session[:user_id].nil?
 
-	  begin
-		userinfo = Users.find(session[:user_id])
-	  rescue ActiveRecord::RecordNotFound => e
-		return false
-	  end
+      begin
+        userinfo = Users.find(session[:user_id])
+      rescue ActiveRecord::RecordNotFound => e
+        return false
+      end
 
-	  unless userinfo.nil?
-		return userinfo.fullname
-	  end
+      unless userinfo.nil?
+        return userinfo.fullname
+      end
 
-	end
+    end
 
-	return false
+    return false
   end
 
   def rememberLogin(username,password)
 
-	if (!username.nil? && !password.nil?)
-	  data = TBlowfish.encrypt("#{username} #{password}")
-	  cookies[:mem] = { :value => data, :expires => Time.now + 3600}
-	  return data
-	else
-	  return nil
-	end
+    if (!username.nil? && !password.nil?)
+      data = TBlowfish.encrypt("#{username} #{password}")
+      cookies[:mem] = { :value => data, :expires => Time.now + 3600}
+      return data
+    else
+      return nil
+    end
 
   end
 
   def getAccountfromCookie()
 
-	unless cookies[:mem].nil?
-	  account = TBlowfish.decrypt(cookies[:mem]).split(/ /)
-	  return account
-	end
-	@error = "Username or Password wrong"
-	return false
+    unless cookies[:mem].nil?
+      account = TBlowfish.decrypt(cookies[:mem]).split(/ /)
+      return account
+    end
+    @error = "Username or Password wrong"
+    return false
   end
 
 end

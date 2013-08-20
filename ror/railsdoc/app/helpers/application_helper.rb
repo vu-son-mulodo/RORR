@@ -1,15 +1,15 @@
 module ApplicationHelper
 
   def require_getCat
-	controllerName = params[:controller].capitalize
-	controllerAction = params[:action]
-	subject = "#{controllerName}  »  #{controllerAction}"
+    controllerName = params[:controller].capitalize
+    controllerAction = params[:action]
+    subject = "#{controllerName}  »  #{controllerAction}"
 
-	if controllerAction == "index"
-	  subject["  »  index"]= ""
-	end
+    if controllerAction == "index"
+      subject["  »  index"]= ""
+    end
 
-	return subject
+    return subject
   end
 
 end
