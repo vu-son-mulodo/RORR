@@ -24,7 +24,7 @@ class Sea
   
   def print_array 
     return nil if @array.nil?
-    @array.each {|row| puts row.map.join(' ')}
+    @array.each {|row| puts row.join(' ')}
   end  
   
   def count_island
