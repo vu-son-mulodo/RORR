@@ -27,8 +27,7 @@ class R1
   
   def convert_array (array)
     length = array.length
-    half = (length.to_f/2).ceil
-    sub_array = sub_array(half,array)
+    sub_array = sub_array((length.to_f/2).ceil,array)
     sub_array.length > 2 ? sum(sub_array) : sub_array
   end
   
