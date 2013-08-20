@@ -32,20 +32,7 @@ class SatisfyNumber
   end
 
   def convert_number_to_array(number)
-    array = Array.new
-    array.push(number) if number < 10
-    process_convert_number_to_array(number, array) if number >= 10
-    return array
-  end
-
-  def process_convert_number_to_array(number, array)
-    while number >= 10
-      a = number % 10
-      number = number / 10
-      array.push(a)
-    end
-    array.push(number)
-    array = array.reverse
+    number.to_s.scan(/./).map {|e| e.to_i}
   end
 
   def value_array(array)
@@ -64,8 +51,7 @@ class SatisfyNumber
 
   def change_some_value_in_array(array, i)
     while i < array.size
-      array[i] = array[i] if i == array.size - 1
-      array[i] = (array[i] + array[i+1]) % 10 if i < array.size - 1
+      array[i] = (array[i].to_i + array[i+1].to_i) % 10
       i += 2
     end
     return array
