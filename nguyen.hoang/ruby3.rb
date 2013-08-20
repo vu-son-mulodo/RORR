@@ -43,9 +43,7 @@ class SatisfyNumber
   end
 
   def convert_to_new_array(array)
-    length = array.size
-    length%2==0 ? hafl = length/2 : hafl = length/2+1
-    (0...hafl).map{|i| (array[i*2].to_i + array[(i*2)+1].to_i) % 10}
+    (0...(array.size/2).ceil).map{|i| (array[i*2].to_i + array[(i*2)+1].to_i) % 10}
   end
 end
 
