@@ -43,20 +43,10 @@ class SatisfyNumber
   end
 
   def convert_to_new_array(array)
-    i, arr = 0, []
-    array = change_some_value_in_array(array, i)
-    array.each_with_index {|el,index| arr << el if index % 2 == 0}
-    return arr
+    length = array.size
+    length%2==0 ? hafl = length/2 : hafl = length/2+1
+    (0...hafl).map{|i| (array[i*2].to_i + array[(i*2)+1].to_i) % 10}
   end
-
-  def change_some_value_in_array(array, i)
-    while i < array.size
-      array[i] = (array[i].to_i + array[i+1].to_i) % 10
-      i += 2
-    end
-    return array
-  end
-
 end
 
 a = SatisfyNumber.new(999,9999)
