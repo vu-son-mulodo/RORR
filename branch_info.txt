@@ -88,3 +88,6 @@ Solution :
 	Step 4 : merge branch ( copy from otherbranch to currentbranch)
 	  git checkout currentbranch
 	  git merge otherbranch
+
+	Step 5 : Delete branch
+		git branch -d branchname

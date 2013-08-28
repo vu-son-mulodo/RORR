@@ -27,3 +27,15 @@ Step 3 : rails new projectName -d mysql
 View PId of Rails :
 Step 1 : lsof -wni tcp:3000
 Step 2 : kill -9 {PID}
+
+How change version rails
+Step 1 : gem uninstall rails
+Step 2 : gem uninstall railties
+Step 3 : gem update rails 3.2.13
+
+
+Run by Unicorn :
+	bundle exec unicorn_rails -c config/unicorn.rb -E development
+
+Run with production :
+ - change config/environments/production.rb : config.assets.compile = true
