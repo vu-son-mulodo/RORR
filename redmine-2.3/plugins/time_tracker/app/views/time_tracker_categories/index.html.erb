@@ -1,0 +1,24 @@
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag    "screen.css", :plugin => "time_tracker" %>
+    <%= stylesheet_link_tag    "jquery.treeview.css", :plugin => "time_tracker" %>
+    <%= javascript_include_tag "time_tracker_categories", :plugin => "time_tracker" %>
+    <%= javascript_include_tag "jquery.cookie.js", :plugin => "time_tracker" %>
+    <%= javascript_include_tag "jquery.treeview.js", :plugin => "time_tracker" %>
+    <% html_title t('tt_ttc_index') %>
+<% end %>
+
+<div class="contextual">
+    <%= link_to(t(:tt_ttc_new), new_time_tracker_category_path, :class => 'icon icon-add') %>
+</div>
+
+<h2><%=t('tt_ttc_index')%></h2>
+<div id="treecontrol">
+    <a title="Collapse the entire tree below" href="#"><%= image_tag 'minus.gif', :plugin => 'time_tracker' %> Collapse All</a>
+    <a title="Expand the entire tree below" href="#"><%= image_tag 'plus.gif', :plugin => 'time_tracker' %> Expand All</a>
+    <a title="Toggle the tree below, opening closed branches, closing open branches" href="#">Toggle All</a>
+</div>
+<div class="box tabular">
+  <ul id="gray" class="treeview-gray">
+    <%= raw @html%>
+  </ul>
+</div>

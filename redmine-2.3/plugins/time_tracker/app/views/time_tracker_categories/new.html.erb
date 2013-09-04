@@ -1,0 +1,7 @@
+<h2><%=t('tt_ttc_new')%></h2>
+<%= form_for :timetrackercategory, url: time_tracker_categories_path do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f }%>
+    <%= submit_tag l(:button_create) %>
+  </div>
+<% end %>
+<%= render :partial => 'back'%>

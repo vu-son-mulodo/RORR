@@ -1,0 +1,60 @@
+<%= error_messages_for 'timetracker' %>
+<div class="box tabular">
+    <div class="control-group">
+        <label for="category_name" class="control-label">
+          <%=l('field_time_tracker_category_id')%>
+        </label>
+          <div class="controls">
+          <%= f.select(:field_time_tracker_category_id, TimeTrackerCategory.find_by_sql('SELECT t.id,t.name,p.name AS "parent_name" FROM time_tracker_categories as t LEFT JOIN time_tracker_categories AS p ON p.id = t.parent_id WHERE t.parent_id <> 0 order by p.id').collect {|p| [ "#{p.parent_name} - #{p.name}", p.id ] }, {include_blank: 'None'}) %>
+        </div>
+    </div>
+
+    <div class="control-group">
+      <div class="controls">
+        <%= label(:timetracker, :field_from, l(:field_from),:class => 'control-label') %>
+        <div class="input-append">
+            <%= f.text_field :field_from, :required => true, :class => 'input-medium', :id => 'datepicker1'%>
+            <%= button_tag(type: 'button', class: "btn", id: "datepicker1btn") do %><i class="icon-calendar"></i><% end %>
+            <%= f.text_field :from_time, :required => true, :class => 'input-small', :id => 'timepicker1' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="controls">
+        <%= label(:timetracker, :field_to, l(:field_to),:class => 'control-label') %>
+        <div class="input-append">
+            <%= f.text_field :field_to,:required => true, :class => 'input-medium', :id => 'datepicker2' %>
+            <%= button_tag(type: 'button', class: "btn", id: "datepicker2btn") do %><i class="icon-calendar"></i><% end %>
+            <%= f.text_field :to_time,:required => true, :class => 'input-small', :id => 'timepicker2' %>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="controls">
+        <%= label(:timetracker, :field_note, l(:field_note)) %>
+        <%= f.text_field :field_note, :class => 'control-label', :size => 60 %></p>
+      </div>
+    </div>
+
+<%= javascript_tag do %>
+  $("#datepicker1").datepicker({
+    dateFormat: 'yy-mm-dd'
+  });
+  $("#datepicker1btn").click(function(event) {
+      event.preventDefault();
+      $("#datepicker1").focus();
+  })
+
+   $("#datepicker2").datepicker({
+    dateFormat: 'yy-mm-dd'
+   });
+  $("#datepicker2btn").click(function(event) {
+      event.preventDefault();
+      $("#datepicker2").focus();
+  })
+  $('#timepicker1').timepicker()
+
+  $('#timepicker2').timepicker()
+<% end %>

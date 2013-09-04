@@ -1,0 +1,85 @@
+
+$(function () {
+    var colors = Highcharts.getOptions().colors;
+    var data = JSON.parse('<%= @group_by_array.html_safe%>');
+    if (Object.getOwnPropertyNames(data).length > 0 ) {
+        var parent_category = [];
+        var sub_category = [];
+        var total = <%=@sum%>;
+        var i = 0;
+        for (var cat in  data) {
+          var sub_cat = data[cat];
+          var color = colors[i];
+          var sum = 0 ;
+            for (var j = 0; j < sub_cat.length; j++) {
+                var sub = sub_cat[j].report;
+                var brightness = 0.2 - (j / sub_cat.length) / 5 ;
+                sum += sub.time;
+                sub_category.push({
+                    name: sub.sub_name,
+                    y: ((sub.time/total)*100),
+                    color: Highcharts.Color(color).brighten(brightness).get()
+                });
+            }
+
+            parent_category.push({
+                name: cat,
+                y: ((sum/total)*100),
+                color: color
+            });
+            i++;
+        }
+
+
+
+        $('#container').highcharts({
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: '<%=t('chart_title')%>'
+            },
+            yAxis: {
+                title: {
+                    text: 'Total percent market share'
+                }
+            },
+            plotOptions: {
+                pie: {
+                    shadow: false,
+                    center: ['50%', '50%']
+                }
+            },
+            tooltip: {
+              valueSuffix: '%',
+              valueDecimals: 2
+            },
+            series: [{
+                name: '<%=t('parent_category')%>',
+                data: parent_category,
+                size: '60%',
+                dataLabels: {
+                    formatter: function() {
+                        return this.y > 5 ? this.point.name : null;
+                    },
+                    color: 'white',
+                    distance: -30
+                }
+            }, {
+                name: '<%=t('sub_category')%>',
+                data: sub_category,
+                size: '80%',
+                innerSize: '60%',
+                dataLabels: {
+                    formatter: function() {
+                        // display only if larger than 1
+                        return this.y > 1 ? '<b>'+ this.point.name +':</b> '+ this.y.toFixed(2) +'%'  : null;
+                    }
+                }
+            }]
+        });
+       }
+       else{
+        $('#container').html('No data to display');
+       }
+  });

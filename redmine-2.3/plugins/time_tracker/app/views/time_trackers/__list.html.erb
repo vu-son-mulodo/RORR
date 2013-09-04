@@ -1,0 +1,10 @@
+<tr>
+  <td class="text-left"><%=User.find(list.user_id).name%></td>
+  <td class="text-center"><%=list.time_tracker_category.name%></td>
+  <td class="text-right"><%=list.from.to_time.strftime("%H:%M")%> ~ <%=list.to.to_time.strftime("%H:%M")%></td>
+  <td><%=list.note%></td>
+  <td  class="text-right">
+      <a rel="nofollow" href="/time_trackers/<%="#{list.id}/edit"%>" alt="edit"><img src="/images/edit.png" height="24" width="24" alt="edit" border="0"></a>
+      <a rel="nofollow" data-method="delete" data-confirm="Are you sure?" href="/time_trackers/<%="#{list.id}"%>" alt="del"><img src="/images/delete.png" height="24" width="24" alt="del" border="0"></a>
+  </td>
+</tr>

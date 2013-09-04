@@ -1,0 +1,17 @@
+<% content_for :header_tags do %>
+    <%= stylesheet_link_tag "bootstrap.css", :plugin => "time_tracker" %>
+    <%= stylesheet_link_tag "jquery.ui.timepicker.css", :plugin => "time_tracker" %>
+    <%= javascript_include_tag "time_tracker", :plugin => "time_tracker" %>
+    <%= javascript_include_tag "bootstrap.js", :plugin => "time_tracker" %>
+    <%= javascript_include_tag "bootstrap-datepicker.min.js", :plugin => "time_tracker" %>
+    <%= javascript_include_tag "jquery.ui.timepicker.js", :plugin => "time_tracker" %>
+<% end %>
+
+<h2><%=t('tt_tt_edit')%></h2>
+    <%= form_for :form_timetracker, url: time_tracker_path, :method => 'PUT' do |f| %>
+        <%= render :partial => 'form', :locals => { :f => f }%>
+        <%= submit_tag l(:button_edit) %>
+        <a rel="nofollow" data-method="delete" data-confirm="Are you sure?" href="<%= time_tracker_path %>"><img src="/images/delete.png" height="24" width="24" alt="del" border="0"></a>
+    </div>
+    <% end %>
+<%= render :partial => 'back'%>

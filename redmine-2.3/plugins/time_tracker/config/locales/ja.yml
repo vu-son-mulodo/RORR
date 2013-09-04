@@ -1,0 +1,48 @@
+# Japanese translations for Ruby on Rails
+# by Akira Matsuda (ronnie@dio.jp)
+# AR error messages are basically taken from Ruby-GetText-Package. Thanks to Masao Mutoh.
+
+ja:
+  permission_Time_Trackers: －タイムトラッカーマネージャー
+  permission_Time_Tracker_Categories: －タイムトラッカーカテゴリマネージャー
+
+  tt_ttc_index: －タイムトラッカーツリー
+  tt_ttc_new: －タイムトラッカーカテゴリ作成
+  tt_ttc_edit: －タイムトラッカーカテゴリ編集
+  
+  tt_tt_new: －タイムトラッカー作成
+  tt_tt_edit: －タイムトラッカー編集
+  tt_tt_chart_list: －チャートリスト
+
+  msg_ttc_remove_successful: －タイムトラッカーカテゴリを成功に取り除きました。
+  msg_ttc_add_successful: －タイムトラッカーカテゴリを成功に作成できました。
+  msg_ttc_can_not_remove: －親カテゴリを取り除く為に子カテゴリを先に取り除きしてください。
+  msg_ttc_update_successful: －タイムトラッカーカテゴリを成功に更新できました。
+  msg_is_not_exist: －○○が存在しません。
+  msg_more_than_to: －○○が終了時間より大きいです。
+  msg_day_equal_to: －○○が終了時間と同様です。
+  msg_not_format_time: －○○は日時のフォーマットが不正です。
+  msg_is_not_child: －○○が必ず子カテゴリです。
+  msg_is_not_empty: －タイムトラッカーが必ずブランクです。
+
+  msg_tt_add_successful: －タイムトラッカーを成功に作成できました。 
+  msg_tt_update_successful: －タイムトラッカーを成功に更新できました。
+  msg_tt_remove_successful: －タイムトラッカーを成功に取り除きできました。
+
+  lb_parent_id: －カテゴリリスト
+
+  parent_id: parent id
+  
+  label_time_trackers_new: －新規
+  label_time__tracker_plural: －タイムトラッカー
+  label_time_trackers_chart: －統計
+  title_time__trackers_new: －新規タイムトラッカー
+  title_time__trackers_edit: －タイムトラッカー編集
+
+  field_time_tracker_category_id: 作業種別
+  field_from: 開始時間
+  field_to: 終了時間
+  field_note: 備考
+  tt_user : User
+  tt_from_date_to_date : 開始時間/終了時間
+  tt_action: 作業種別

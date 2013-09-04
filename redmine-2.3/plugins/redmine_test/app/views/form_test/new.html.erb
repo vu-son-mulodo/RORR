@@ -1,0 +1,9 @@
+<h2>FormTestController#new</h2>
+<%= labelled_form_for :category, @category, :url => { :action => 'create' } do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f }%>
+    <%= submit_tag l(:button_create) %>
+    <%= link_to "Delete this post",
+    :url => { :action => "create"},
+    :update => { :success => "index", :failure => "new" },
+    :remote => true %>
+<% end %>

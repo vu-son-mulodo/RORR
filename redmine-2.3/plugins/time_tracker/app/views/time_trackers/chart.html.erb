@@ -1,0 +1,9 @@
+<body style="width: 600px;height: 400px;background-color: #F6F6F6;">
+        <%= javascript_include_tag "jquery.min.js", :plugin => "time_tracker" %>
+        <script type="text/javascript">
+          <%= render :partial => 'show_chart'%>
+        </script>
+        <div id="container" style="width: 600px; height: 400px; margin: 0 auto"></div>
+        <%= javascript_include_tag "highcharts.js", :plugin => "time_tracker" %>
+        <%= javascript_include_tag "exporting.js", :plugin => "time_tracker" %>
+</body>

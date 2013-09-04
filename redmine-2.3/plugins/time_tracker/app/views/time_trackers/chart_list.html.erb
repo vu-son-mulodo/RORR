@@ -1,0 +1,9 @@
+<H2><%= t('tt_tt_chart_list')%></H2>
+
+<div class="mypage-box">
+  <%= render :partial => 'form_chart'%>
+</div>
+
+<div>
+  <%= render :partial => 'list_chart_list', :collection => @userlist, :locals => { :report_end_date => @report_end_date, :report_start_date => @report_start_date }%>
+</div>

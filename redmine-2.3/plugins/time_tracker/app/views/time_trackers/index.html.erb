@@ -1,0 +1,29 @@
+<% content_for :header_tags do %>
+  <%= stylesheet_link_tag    "bootstrap.css", :plugin => "time_tracker" %>
+  <%= stylesheet_link_tag    "time_tracker", :plugin => "time_tracker" %>
+  <%= javascript_include_tag "time_tracker", :plugin => "time_tracker" %>
+  <%= javascript_include_tag "bootstrap.js", :plugin => "time_tracker" %>
+
+<% end %>
+<div class="contextual">
+  <%= link_to(l(:label_time_trackers_new), new_time_tracker_path, :class => 'icon' ) %>
+  <%= link_to(l(:label_time_trackers_chart), list_chart_time_trackers_path, :class => 'icon' ) %>
+</div>
+<h2><%= t('label_time_tracker_index')%></h2>
+<div><%= render :partial => 'form_list'%></div>
+<table class="table">
+  <thead>
+    <tr>
+      <th class="span3"><%=t('tt_user')%></th>
+      <th class="span3"><%=t('tt_action')%></th>
+      <th class="span3 text-right"><%=t('tt_from_date_to_date')%></th>
+      <th class="span8"><%=t('field_note')%></th>
+      <th class="span4"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => 'list', :collection => @timetrackers %>
+  </tbody>
+</table>
+
+<p class="pagination"><%=pagination_links_full @timetracker_pages%></p>

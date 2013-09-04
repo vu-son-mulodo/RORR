@@ -1,0 +1,7 @@
+<h2><%=t('tt_ttc_edit')%></h2>
+<%= form_for :timetrackercategory, url: time_tracker_category_path, :method => 'PUT' do |f| %>
+  <%= render :partial => 'form', :locals => { :f => f }%>
+  <%= submit_tag l(:button_edit) %>
+</div>
+<% end %>
+<%= render :partial => 'back'%>

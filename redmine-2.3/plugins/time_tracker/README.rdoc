@@ -1,0 +1,5 @@
+= time_tracker
+
+Update 03 September 2013 :
+ - Fix error message for time tracker categories when move child category to parent category (parent_id = 0)
+ - Update Locale japanese

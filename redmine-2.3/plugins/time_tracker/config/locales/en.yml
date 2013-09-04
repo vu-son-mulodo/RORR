@@ -1,0 +1,53 @@
+# English strings go here for Rails i18n
+en:
+  permission_Time_Trackers: "Time Trackers Manager"
+  permission_Time_Tracker_Categories: "Time Traker Categories Manager"
+
+  tt_ttc_index: "Time tracker categories tree"
+  tt_ttc_new: "Create time tracker category"
+  tt_ttc_edit: "Edit time tracker category"
+  
+  tt_tt_new: "Create time tracker"
+  tt_tt_edit: "Edit time tracker"
+  tt_tt_chart_list: "Chart List"
+
+  msg_ttc_remove_successful: "Remove time tracker category  successful"
+  msg_ttc_add_successful: "Create time tracker categories  successful"
+  msg_ttc_can_not_remove: "Can not remove parent category, please remove all child of this category before remove"
+  msg_ttc_update_successful: "Update time tracker category successful"
+  msg_is_not_exist: "is not exist"
+  msg_more_than_to: "more than To Date"
+  msg_day_equal_to: "have to day equal To Date"
+  msg_not_format_time: "is not datetime format"
+  msg_is_not_child: "have to be child category"
+  msg_is_not_empty: "have to empty time tracker"
+
+  msg_tt_add_successful: "Create time tracker successful" 
+  msg_tt_update_successful: "Update time tracker successful"
+  msg_tt_remove_successful: "Remove time tracker successful"
+
+  lb_parent_id: "list categories"
+
+  parent_id: "parent id"
+  
+  label_time_tracker_index: TimeTrackers
+  label_time_trackers_new: New
+  label_time__tracker_plural: Time Trackers
+  label_time_trackers_chart: Statistics
+  title_time__trackers_new: New Time Tracker
+  title_time__trackers_edit: Edit Time Tracker
+
+  field_time_tracker_category_id: Time tracker Category
+  field_from: From Date
+  field_to: To Date
+  field_note: Note
+  tt_user : User
+  tt_from_date_to_date : From ~ To
+  tt_action: Action
+
+  chart_title: 'Time Tracker Chart'
+  parent_category: Parent Category
+  sub_category: Sub Category
+  btn_search: Search
+  start_date: Start Date
+  end_date: End Date

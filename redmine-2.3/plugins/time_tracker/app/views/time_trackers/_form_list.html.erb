@@ -1,0 +1,3 @@
+<div class="search_listname text-right">
+  <%=select("select", "userid", User.all.collect {|p| [ p.name, p.id ] }, {include_blank: 'User Name List'}) %>
+</div>

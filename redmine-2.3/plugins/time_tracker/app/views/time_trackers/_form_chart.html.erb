@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "jquery.ui.timepicker.css", :plugin => "time_tracker" %>
+<%= javascript_include_tag "jquery.ui.timepicker.js", :plugin => "time_tracker" %>
+<%= form_for :chartlist, url: list_chart_time_trackers_path do |f| %>
+  <label><%=t('start_date')%>:</label>
+  <input id="report_start_date" name="report_start_date" type="text" class="input-medium search-query"/>
+  <label><%=t('end_date')%>:</label>
+  <input id="report_end_date" name="report_end_date" type="text" class="input-medium search-query"/>
+  <button class="btn" type="submit"><%=t('btn_search')%></button>
+<%end%>
+<%= javascript_tag do %>
+  $("#report_start_date").datepicker({
+    dateFormat: 'yy-mm-dd'
+  });
+   $("#report_end_date").datepicker({
+    dateFormat: 'yy-mm-dd'
+  });
+<%end%>

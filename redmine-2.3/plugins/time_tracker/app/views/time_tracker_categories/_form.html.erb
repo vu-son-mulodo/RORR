@@ -1,0 +1,6 @@
+<%= error_messages_for 'timetrackercategory' %>
+<div class="box tabular">
+  <p><%= label(:timetrackercategory, :name, l(:field_name)) %>
+      <%= f.text_field :name, :required => true, :size => 60 %></p>
+  <p><%= label(:timetrackercategory, :parent_id, t('lb_parent_id')) %>
+      <%= f.select(:parent_id, TimeTrackerCategory.all.collect {|p| [ p.name, p.id ] }, {include_blank: 'None'}) %></p>

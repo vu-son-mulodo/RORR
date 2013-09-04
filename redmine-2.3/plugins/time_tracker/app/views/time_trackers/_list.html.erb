@@ -1,0 +1,6 @@
+<tr>
+  <td colspan="8" >
+    <span class="icon-calendar"></span> <strong><%=list.date_from%></strong>
+  </td>
+</tr>
+<%= render :partial => '_list', :collection => list.data.sort_by { |val| val.from} %>
