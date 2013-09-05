@@ -13,8 +13,6 @@ class GlossaryController < ApplicationController
   helper :glossary_styles
   include GlossaryStylesHelper
 
-  #helper_method :prompt_to_remote
-
   layout 'base'
   before_filter :find_project, :authorize
   before_filter :find_term, :only => [:show, :edit, :destroy]
@@ -90,6 +88,7 @@ class GlossaryController < ApplicationController
 
   def preview
     @text = params[:term][:description]
+    puts "-----------------------------------------------#{@text}-------------------------------"
     render :partial => 'common/preview'
   end
 

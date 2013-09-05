@@ -68,7 +68,7 @@ module GlossaryHelper
 
   def updated_by(updated, author)
     time_tag = content_tag('acronym', distance_of_time_in_words(Time.now, updated), :title => format_time(updated))
-    author_tag = (author.is_a?(User) && !author.is_a?(AnonymousUser)) ? link_to(h(author), :controller => 'account', :action => 'show', :id => author) : h(author || 'Anonymous')
+    author_tag = (author.is_a?(User) && !author.is_a?(AnonymousUser)) ? link_to(h(author), :controller => 'users', :action => 'show', :id => author) : h(author || 'Anonymous')
     l(:label_updated_time_by, :author => author_tag, :age => time_tag)
   end
 

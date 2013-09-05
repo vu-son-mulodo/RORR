@@ -34,7 +34,6 @@ post 'term_categories/:id/change_order', :to => 'term_categories#change_order'
 put  'term_categories/:id/edit', :to => 'term_categories#edit'
 post 'term_categories/:id/destroy', :to => 'term_categories#destroy'
 
-
 #resources :glossary_styles
 #resources :glossary
 #resources :term_categories

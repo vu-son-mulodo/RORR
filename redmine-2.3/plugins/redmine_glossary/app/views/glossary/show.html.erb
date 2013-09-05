@@ -12,7 +12,7 @@
 
 <p class="author">
 <%= authoring @term.created_on, @term.author %>.
-<%= updated_by(@term.updated_on, @term.updater) + '.' if @term.created_on != @term.updated_on %>
+<%= raw updated_by(@term.updated_on, @term.updater) + '.' if @term.created_on != @term.updated_on %>
 </p>
 
 </div>

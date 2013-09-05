@@ -19,6 +19,8 @@
                          :complete => "Element.scrollTo('preview')"
                        }, :accesskey => accesskey(:preview),
                        :remote => true %>
+
+  <%= javascript_tag "$('#issue_subject').focus();" %>
 <% end %>
 
 <div id="preview" class="wiki"></div>
