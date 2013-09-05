@@ -2,7 +2,7 @@
 <% if User.current.allowed_to?(:view_terms, @project, :global => true) %>
   <h3><%= l(:label_view) %></h3>
   <%= render(:partial => "glossary_styles/form",
-	   :object => @view_style) %>
+             :object => @view_style) %>
   <br />
 <% end %>
 

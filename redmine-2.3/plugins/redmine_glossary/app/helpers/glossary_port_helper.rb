@@ -39,12 +39,12 @@ module GlossaryPortHelper
       ic = Iconv.new('UTF-8', portinfo.in_encoding)
 
       raise l(:error_file_none)	if (!portinfo.import_file)
-      FCSV::parse(portinfo.import_file) { |row|
+      FCSV::parse(portinfo.import_file.read) { |row|
         line_count += 1
         next	if (portinfo.is_first_comment and line_count == 1)
         next	if (row.empty?)
 
-        name = row[portinfo.param_col('name')]
+        name = row[portinfo.param_col('name').to_i]
         raise sprintf(l(:error_no_name), t("label.name"))	unless name
 
         name = ic.iconv(name)
@@ -78,7 +78,7 @@ module GlossaryPortHelper
             term[prm] = val
           end
         end
-	unless (term.save)
+        unless (term.save)
           raise l(:error_create_term)
         end
       }

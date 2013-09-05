@@ -19,22 +19,18 @@ get 'term_categories/:id/change_order', :to => 'term_categories#change_order'
 get 'term_categories/:id/edit', :to => 'term_categories#edit'
 
 post 'glossary/:id/preview', :to => 'glossary#preview'
-put  'glossary/:id/preview', :to => 'glossary#preview'
 post 'glossary/:id/new', :to => 'glossary#new', :as => 'terms'
 post 'glossary/:id/add_term_category', :to => 'glossary#add_term_category'
 post 'glossary/:id/import_csv_exec', :to => 'glossary#import_csv_exec'
 post 'glossary/:id/destroy', :to => 'glossary#destroy'
-put  'glossary/:id/edit', :to => 'glossary#edit'
-
-#post 'glossary_styles/:id/edit', :to => 'glossary_styles#edit'
-put  'glossary_styles/:id/edit', :to => 'glossary_styles#edit'
 
 post 'term_categories/:id/change_order', :to => 'term_categories#change_order'
-#post 'term_categories/:id/edit', :to => 'term_categories#edit'
-put  'term_categories/:id/edit', :to => 'term_categories#edit'
 post 'term_categories/:id/destroy', :to => 'term_categories#destroy'
 
-#resources :glossary_styles
-#resources :glossary
-#resources :term_categories
+put  'glossary/:id/preview', :to => 'glossary#preview'
+put  'glossary/:id/edit', :to => 'glossary#edit'
+
+put  'glossary_styles/:id/edit', :to => 'glossary_styles#edit'
+
+put  'term_categories/:id/edit', :to => 'term_categories#edit'
 
