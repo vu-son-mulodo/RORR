@@ -27,6 +27,8 @@ post 'glossary/:id/destroy', :to => 'glossary#destroy'
 post 'term_categories/:id/change_order', :to => 'term_categories#change_order'
 post 'term_categories/:id/destroy', :to => 'term_categories#destroy'
 
+post 'glossary_styles/:id/edit', :to => 'glossary_styles#edit'
+
 put  'glossary/:id/preview', :to => 'glossary#preview'
 put  'glossary/:id/edit', :to => 'glossary#edit'
 
