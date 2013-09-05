@@ -42,7 +42,7 @@ class GlossaryController < ApplicationController
       format.html { render :template => 'glossary/index.html.erb', :layout => !request.xhr? }
       format.csv  {
         ary = @terms
-        ary = GroupingTerms.flatten(@terms)	if (@glossary_style.grouping?)
+        ary = GroupingTerms.flatten(@terms)  if (@glossary_style.grouping?)
         send_data(glossary_to_csv(ary), :type => 'text',
                   :filename => "glossary-export.csv")
       }
@@ -88,7 +88,6 @@ class GlossaryController < ApplicationController
 
   def preview
     @text = params[:term][:description]
-    puts "-----------------------------------------------#{@text}-------------------------------"
     render :partial => 'common/preview'
   end
 
@@ -127,10 +126,6 @@ class GlossaryController < ApplicationController
         format.js do
         term_categories = TermCategory.find(:all, :conditions => "project_id = #{@project.id}")
          render js: %($('#term_category_id').html("#{render_option_categories(term_categories)}");)
-          #term_categories = TermCategory.find(:all, :conditions => "project_id = #{@project.id}")
-          #render(:update) {|page| page.replace "term_category_id",
-          #  content_tag('select', '<option></option>' + options_from_collection_for_select(term_categories, 'id', 'name', @category.id), :id => 'term_category_id', :name => 'term[category_id]')
-          #}
         end
       end
     end
@@ -166,6 +161,7 @@ class GlossaryController < ApplicationController
   end
 
   def import_csv_exec
+    CsvGlossaryImportInfo.new(params)
     @import_info = CsvGlossaryImportInfo.new(params)
     glossary_from_csv(@import_info, @project.id)
     if (@import_info.success?)

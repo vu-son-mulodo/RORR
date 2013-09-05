@@ -5,7 +5,7 @@
 <tr><th><%=h label_param(prm) %>:</th><td><%= term.value(prm) %></td></tr>
 <% end %>
 </table>
-<% unless (term.description.empty?) %>
+<% unless (term.description.nil?) %>
 <strong><%=l(:field_description)%></strong>:
 <div class="wiki">
 <%= textilizable term, :description, :attachments => term.attachments %>
