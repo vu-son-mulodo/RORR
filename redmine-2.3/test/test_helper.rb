@@ -19,9 +19,9 @@
 require 'simplecov'
 SimpleCov.start 'rails' do
   add_filter "/test/"
-  #add_filter "/models/"
-  add_group "Models", "app/models"
-  add_group "Controllers", "app/controllers"
+  add_group "plugins time tracker", "plugins/time_tracker"
+  add_group "plugins redmine glossary", "plugins/redmine_glossary"
+  add_group "app", "app"
   add_filter do |source_file|
     source_file.lines.count < 5
   end
