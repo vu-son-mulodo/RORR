@@ -13,7 +13,7 @@ class TimeTracker < ActiveRecord::Base
     if (self.time_tracker_category_id == 0) || (TimeTrackerCategory.find_by_id(self.time_tracker_category_id).nil?)
       errors.add(l('field_time_tracker_category_id'), l('msg_is_not_exist'))
     end
-    if !TimeTrackerCategory.find_by_id(self.time_tracker_category_id).nil? && TimeTrackerCategory.find_by_id(self.time_tracker_category_id).parent_id != '0'
+    if !TimeTrackerCategory.find_by_id_and_parent_id(self.time_tracker_category_id,0).nil?
       errors.add(l('field_time_tracker_category_id'), l('msg_is_not_child'))
     end
 

@@ -1,6 +1,5 @@
 
 <p><%= f.text_field :name, :label=>t('label.name'), :size => 100, :required => true %></p>
-
 <% for prm in Term.setting_params %>
   <% if param_visible?(prm) %>
   <p><%= f.text_field prm, :label=>label_param(prm), :size => 100 %></p>
