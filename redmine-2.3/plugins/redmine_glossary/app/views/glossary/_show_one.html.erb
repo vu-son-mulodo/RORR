@@ -12,7 +12,7 @@
 </div>
 
 <% if term.attachments.any? %>
-    <%= (@is_index) ? "" : '<hr />' %>
+    <%= raw (@is_index) ? "" : '<hr />' %>
     <%= link_to_attachments term %>
 <% end %>
 <% end %>
