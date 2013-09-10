@@ -8,11 +8,11 @@ script:
   - gem install xpath -v '2.0.0'
   - bundle install
   - rake db:test:load
-  - bundle exec rspec ./spec/helpers/users_helper_spec.rb
-  - bundle exec rspec ./spec/models/user_spec.rb
-  - bundle exec rspec ./spec/models/users_spec.rb
-  - bundle exec rspec ./spec/helpers/blogs_helper_spec.rb
-  - bundle exec rspec ./spec/models/blog_spec.rb
+  - rake rspec ./spec/helpers/users_helper_spec.rb
+  - rake rspec ./spec/models/user_spec.rb
+  - rake rspec ./spec/models/users_spec.rb
+  - rake rspec ./spec/helpers/blogs_helper_spec.rb
+  - rake rspec ./spec/models/blog_spec.rb
 before_install:
   - gem update --system
   - gem --version
